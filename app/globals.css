@@ -13,16 +13,16 @@
     --foreground: #090909;
 
     --primary: #ffc123; /* жёлтый — главный акцент */
-    --primary-foreground: #111111; /* текст на жёлтом */
+    --primary-foreground: #111214; /* текст на жёлтом */
 
     --secondary: #f5f5f5;
-    --secondary-foreground: #171717;
+    --secondary-foreground: #111214;
 
     --muted: #f5f5f5;
     --muted-foreground: #737373; /* серый текст */
 
     --accent: #f5f5f5;
-    --accent-foreground: #171717;
+    --accent-foreground: #111214;
 
     --primary-text: #e8e8e8;
 
@@ -60,9 +60,9 @@
 }
 
 .dark {
-    --btn-hover-fill: #000000; /* hover bg in dark */
+    --btn-hover-fill: #111214; /* hover bg in dark */
     --btn-hover-text: #ffffff; /* hover text in dark */
-    --background: #090909;
+    --background: #111214;
     --foreground: #fafafa;
 
     --primary: #ffc123; /* жёлтый — главный акцент */

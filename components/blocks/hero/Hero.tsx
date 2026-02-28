@@ -1,7 +1,7 @@
 export const Hero = () => {
     return (
-        <section className="grid grid-cols-1 md:grid-cols-3 items-start justify-between w-full min-h-[70vh] overflow-x-hidden">
-            <div className="w-full flex flex-col items-start justify-start relative col-span-1 md:col-span-2 z-10">
+        <section className="grid grid-cols-1 md:grid-cols-2 items-center justify-between w-full min-h-screen relative overflow-x-clip">
+            <div className="w-full flex flex-col items-start justify-center z-10 col-span-1 md:col-span-2 pt-10 md:pt-30">
                 <p className="font-heading text-[1rem] md:text-[1.3rem]">
                     Software development company: Iter Soft
                 </p>
@@ -18,8 +18,8 @@ export const Hero = () => {
                     business
                 </h1>
             </div>
-            <div className="relative w-full col-span-1">
-                <span className="absolute w-40 h-40 md:w-175 md:h-175 border-50 md:border-100 border-secondary rounded-[100px] md:rounded-[180px] -top-50 right-0 md:-top-30 md:-right-40 rotate-45 animate-spin animation-duration-[20s] " />
+            <div className=" col-span-1">
+                <span className="absolute w-40 h-40 md:w-180 md:h-180 border-30 md:border-95 border-secondary rounded-[50px] md:rounded-[180px] -top-20 right-20 md:top-22 md:right-10 rotate-45 animate-spin animation-duration-[25s] " />
             </div>
         </section>
     );

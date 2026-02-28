@@ -34,7 +34,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} ${russoOne.variable} antialiased min-h-screen flex flex-col`}
+                className={`${geistSans.variable} ${geistMono.variable} ${russoOne.variable} antialiased `}
             >
                 <NextIntlClientProvider>
                     <ThemeProvider
@@ -44,7 +44,7 @@ export default function RootLayout({
                         disableTransitionOnChange
                     >
                         <Header />
-                        <main className="mx-auto max-w-7xl w-full px-4 flex-1">
+                        <main className="mx-auto max-w-7xl w-full px-4 ">
                             {children}
                         </main>
                     </ThemeProvider>
