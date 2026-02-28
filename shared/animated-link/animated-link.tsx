@@ -1,14 +1,20 @@
 import Link from "next/link";
 
-type LinkProps = {
-    children: React.ReactNode;
+type AnimatedLinkProps = {
     href: string;
+    children: React.ReactNode;
+    className?: string;
 };
 
-export function AnimatedLink({ children, href }: LinkProps) {
+export const AnimatedLink = ({ href, children, className }: AnimatedLinkProps) => {
     return (
-        <Link href={href} className="animated-split-btn font-(--russo-one)">
-            <span>{children}</span>
+        <Link
+            href={href}
+            className={`${className} group flex items-center justify-center text-sm font-light px-3 py-2 rounded-sm uppercase relative overflow-hidden border-3 border-primary bg-primary text-primary-foreground transition-transform duration-200 ease-in-out hover:text-(--btn-hover-text) active:scale-97 active:text-white font-heading`}
+        >
+            <span className="relative z-20">{children}</span>
+            <span className="absolute left-0 top-0 h-full w-0 group-hover:w-1/2 transition-[width] duration-300 ease-in-out z-10 bg-(--btn-hover-fill)" />
+            <span className="absolute right-0 top-0 h-full w-0 group-hover:w-1/2 transition-[width] duration-300 ease-in-out z-10 bg-(--btn-hover-fill)" />
         </Link>
     );
-}
+};
