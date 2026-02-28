@@ -10,7 +10,7 @@
     --btn-background: #ffc123;
 
     --background: #fafafa;
-    --foreground: #090909;
+    --foreground: #111214;
 
     --primary: #ffc123; /* жёлтый — главный акцент */
     --primary-foreground: #111214; /* текст на жёлтом */
@@ -21,7 +21,7 @@
     --muted: #f5f5f5;
     --muted-foreground: #737373; /* серый текст */
 
-    --accent: #f5f5f5;
+    --accent: #303030;
     --accent-foreground: #111214;
 
     --primary-text: #e8e8e8;
@@ -66,7 +66,7 @@
     --foreground: #fafafa;
 
     --primary: #ffc123; /* жёлтый — главный акцент */
-    --primary-foreground: #111111; /* текст на жёлтом */
+    --primary-foreground: #111214; /* текст на жёлтом */
 
     --secondary: #303030;
     --secondary-foreground: #fafafa;
@@ -222,3 +222,12 @@ a,
     transform: scale(0.97);
     color: #ffffff;
 }
+
+.drawer-slow[data-vaul-drawer] {
+    animation-duration: 2000ms !important;
+    transition-duration: 2000ms !important;
+  }
+  .drawer-slow ~ [data-vaul-overlay] {
+    animation-duration: 2000ms !important;
+    transition-duration: 2000ms !important;
+  }

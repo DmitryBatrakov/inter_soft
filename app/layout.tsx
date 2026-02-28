@@ -32,9 +32,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning className="overflow-clip">
+        <html lang="en" suppressHydrationWarning className="overflow-clip  ">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} ${russoOne.variable} antialiased relative`}
+                className={`${geistSans.variable} ${geistMono.variable} ${russoOne.variable} antialiased relative overflow-hidden`}
             >
                 <NextIntlClientProvider>
                     <ThemeProvider
