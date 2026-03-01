@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider/theme-provider";
 import { Header } from "@/components/header/Header";
 import { NextIntlClientProvider } from "next-intl";
@@ -28,10 +27,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning className="overflow-x-clip">
-            <body
-                className={`${inter.variable} ${russoOne.variable} antialiased relative overflow-x-hidden`}
-            >
+        <html
+            lang="en"
+            suppressHydrationWarning
+            className="overflow-x-hidden"
+        >
+            <body className={`${inter.variable} ${russoOne.variable} antialiased relative`}>
                 <NextIntlClientProvider>
                     <ThemeProvider
                         attribute="class"
@@ -40,7 +41,7 @@ export default function RootLayout({
                         disableTransitionOnChange
                     >
                         <Header />
-                        <main className="mx-auto max-w-7xl w-full px-4 ">
+                        <main className="mx-auto max-w-7xl w-full px-4 pt-18 md:pt-22">
                             {children}
                         </main>
                     </ThemeProvider>

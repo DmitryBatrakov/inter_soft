@@ -1,9 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { ThemeToggle } from "../theme-provider/toggle-theme";
 import { Button } from "../ui/button";
 import { ChevronDown } from "lucide-react";
 import { AnimatedButton } from "@/shared/amimated-button/animated-button";
 import { useTranslations } from "next-intl";
+import { useEffect, useRef, useState } from "react";
 import {
     Drawer,
     DrawerClose,
@@ -18,9 +21,36 @@ import { HiOutlineMenu } from "react-icons/hi";
 
 export const Header = () => {
     const t = useTranslations("Header");
+    const [isVisible, setIsVisible] = useState(true);
+    const lastScrollY = useRef(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            const delta = currentScrollY - lastScrollY.current;
+
+            // Always reveal near the top and avoid jitter on tiny scroll moves.
+            if (currentScrollY < 24) {
+                setIsVisible(true);
+            } else if (delta > 6) {
+                setIsVisible(false);
+            } else if (delta < -6) {
+                setIsVisible(true);
+            }
+
+            lastScrollY.current = currentScrollY;
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <header className="flex justify-center items-center py-5 px-2 w-full fixed top-0 left-0 right-0 z-50 bg-background/50 backdrop-blur-xl font-heading">
+        <header
+            className={`flex justify-center items-center py-5 px-2 w-full fixed top-0 left-0 right-0 z-50 bg-background/50 backdrop-blur-xl font-heading transition-transform duration-300 will-change-transform ${
+                isVisible ? "translate-y-0" : "-translate-y-full"
+            }`}
+        >
             <nav className="justify-between items-center max-w-7xl w-full hidden lg:flex px-3">
                 <div>
                     <p>Inter SOFT</p>

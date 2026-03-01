@@ -9,8 +9,8 @@ export default function Home() {
             <Hero />
             <Separator />
             <WorkPrinciples numberSection={"01"} />
-            <Separator />
             <DigitalServices numberSection={"02"} />
+            <WorkPrinciples numberSection={"01"} />
             <Separator />
         </div>
     );

@@ -38,14 +38,14 @@ export const Hero = () => {
                     </Link>
                 </HeroBanner>
             </div>
-            <SpinningFigure
+            {/* <SpinningFigure
                 w="w-50 md:w-100 lg:w-190"
                 h="h-50 md:h-100 lg:h-190"
                 border="border-30 md:border-50 lg:border-100"
                 rounded="rounded-[50px] md:rounded-[100px] lg:rounded-[200px]"
                 top="top-25 md:top-22 lg:top-22"
                 right="-right-5 md:right-0 lg:-right-55"
-            />
+            /> */}
         </section>
     );
 };

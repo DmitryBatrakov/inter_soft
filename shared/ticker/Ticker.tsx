@@ -8,11 +8,7 @@ export function AboutTicker({ text }: Props) {
     const items = Array.from({ length: 6 }, () => text);
 
     return (
-        <div className="relative w-full overflow-hidden py-6">
-            {/* лёгкий градиент по краям как маска */}
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-linear-to-r from-[#0b0b0b] to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-linear-to-l from-[#0b0b0b] to-transparent" />
-
+        <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen overflow-x-hidden py-6">
             <div
                 className="flex w-max animate-ticker gap-10"
                 style={{ ["--ticker-duration" as string]: "40s" }}

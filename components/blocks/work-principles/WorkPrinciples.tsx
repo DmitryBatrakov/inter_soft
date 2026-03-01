@@ -57,7 +57,7 @@ const cardData: CardData[] = [
 
 export const WorkPrinciples = ({ numberSection }: WorkPrinciplesProps) => {
     return (
-        <section className="flex flex-col  w-full min-h-screen mx-auto relative">
+        <section className="flex flex-col w-full min-h-screen mx-auto relative z-10 bg-background ">
             <div className="w-full flex  items-center justify-between z-10">
                 <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem]">
                     work principles
@@ -67,7 +67,7 @@ export const WorkPrinciples = ({ numberSection }: WorkPrinciplesProps) => {
                 </span>
             </div>
             <div className="flex flex-col items-center justify-between w-full">
-                <div>
+                <div className="w-full">
                     <AboutTicker text="About us" />
                 </div>
             </div>
