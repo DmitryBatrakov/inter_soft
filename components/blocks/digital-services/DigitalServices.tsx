@@ -1,29 +1,28 @@
 "use client";
 
-import { AboutTicker } from "@/shared/ticker/Ticker";
+import { OurServices } from "@/shared/our-services/OurServices";
+import { Ticker } from "@/shared/ticker/Ticker";
 
 type DigitalServicesProps = {
     numberSection: string;
-}
+};
 
 export const DigitalServices = ({ numberSection }: DigitalServicesProps) => {
     return (
-        <section className="relative w-full min-h-[180vh] z-50">
-            <div className="sticky top-0 h-screen w-full isolate overflow-hidden">
-                <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen -z-10 bg-foreground" />
-                <div className="w-full flex items-center justify-between z-10">
-                    <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem]">
-                        digital services
-                    </span>
-                    <span className="text-accent-foreground font-heading px-3 py-1 bg-secondary rounded-md">
-                        {numberSection}
-                    </span>
-                </div>
-                <div className="flex flex-col items-center justify-between w-full">
-                    <div className="w-full">
-                        <AboutTicker text="Our servies" />
-                    </div>
-                </div>
+        <section className="w-full min-h-screen flex flex-col items-center justify-start mx-auto bg-muted-foreground px-4">
+            <div className="w-full flex items-center justify-between z-10 max-w-7xl pt-4">
+                <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] text-white dark:text-secondary">
+                    digital services
+                </span>
+                <span className=" text-black dark:text-white font-heading px-3 py-1 bg-secondary rounded-md ">
+                    {numberSection}
+                </span>
+            </div>
+            <div className="w-full">
+                <Ticker text="Our servies"/>
+            </div>
+            <div className=" w-full max-w-7xl flex items-center justify-center">
+                <OurServices />
             </div>
         </section>
     );

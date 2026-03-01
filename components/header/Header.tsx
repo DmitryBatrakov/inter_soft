@@ -6,7 +6,6 @@ import { Button } from "../ui/button";
 import { ChevronDown } from "lucide-react";
 import { AnimatedButton } from "@/shared/amimated-button/animated-button";
 import { useTranslations } from "next-intl";
-import { useEffect, useRef, useState } from "react";
 import {
     Drawer,
     DrawerClose,
@@ -17,41 +16,18 @@ import {
     DrawerTrigger,
 } from "../ui/drawer";
 import { HiOutlineMenu } from "react-icons/hi";
-
+import { useScrollDirection } from "@/hooks/useScrollDirection";
+import { cn } from "@/lib/utils";
 
 export const Header = () => {
     const t = useTranslations("Header");
-    const [isVisible, setIsVisible] = useState(true);
-    const lastScrollY = useRef(0);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY;
-            const delta = currentScrollY - lastScrollY.current;
+    const direction = useScrollDirection(10);
 
-            // Always reveal near the top and avoid jitter on tiny scroll moves.
-            if (currentScrollY < 24) {
-                setIsVisible(true);
-            } else if (delta > 6) {
-                setIsVisible(false);
-            } else if (delta < -6) {
-                setIsVisible(true);
-            }
-
-            lastScrollY.current = currentScrollY;
-        };
-
-        window.addEventListener("scroll", handleScroll, { passive: true });
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
 
     return (
-        <header
-            className={`flex justify-center items-center py-5 px-2 w-full fixed top-0 left-0 right-0 z-50 bg-background/50 backdrop-blur-xl font-heading transition-transform duration-300 will-change-transform ${
-                isVisible ? "translate-y-0" : "-translate-y-full"
-            }`}
-        >
-            <nav className="justify-between items-center max-w-7xl w-full hidden lg:flex px-3">
+        <header className={cn("flex justify-center items-center py-5 px-2 w-full fixed top-0 left-0 right-0 z-50 bg-background transition-all duration-400 ease-in-out delay-100", direction === 'down' ? ' -translate-y-full' : 'translate-y-0')}>
+            <nav className="justify-between items-center max-w-7xl w-full hidden lg:flex">
                 <div>
                     <p>Inter SOFT</p>
                 </div>
@@ -86,13 +62,11 @@ export const Header = () => {
                         <DrawerTrigger>
                             <HiOutlineMenu className="w-6 h-6" />
                         </DrawerTrigger>
-                        <DrawerContent className="min-h-screen drawer-slow font-heading">
+                        <DrawerContent
+                            className="min-h-screen drawer-slow">
                             <DrawerHeader>
                                 <DrawerTitle>Menu</DrawerTitle>
                             </DrawerHeader>
-                            <Link href="/">{t("services")}</Link>
-                            <Link href="/">{t("contacts")}</Link>
-                            <Link href="/">{t("blog")}</Link>
                             <DrawerFooter>
                                 <DrawerClose asChild>
                                     <AnimatedButton>Close</AnimatedButton>

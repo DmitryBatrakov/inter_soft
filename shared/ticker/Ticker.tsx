@@ -1,16 +1,18 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 
 type Props = {
     text: string;
+    className?: string;
 };
 
-export function AboutTicker({ text }: Props) {
+export function Ticker({ text, className }: Props) {
     const items = Array.from({ length: 6 }, () => text);
 
     return (
-        <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen overflow-x-hidden py-6">
+        <div className=" w-full py-6 overflow-x-hidden">
             <div
-                className="flex w-max animate-ticker gap-10"
+                className={cn("flex w-max animate-ticker gap-10 ", className)}
                 style={{ ["--ticker-duration" as string]: "40s" }}
             >
                 <TickerRow items={items} />
@@ -62,7 +64,6 @@ function OutlinedText({ children }: { children: React.ReactNode }) {
       "
             style={{
                 WebkitTextStroke: "2px var(--ticker-stroke)",
-                textShadow: "var(--ticker-shadow)",
             }}
         >
             {children}

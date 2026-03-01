@@ -5,13 +5,13 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
     return (
-        <div className="flex flex-col items-center justify-center font-sans relative">
+        <div className="mx-auto w-full font-sans">
+
             <Hero />
             <Separator />
             <WorkPrinciples numberSection={"01"} />
             <DigitalServices numberSection={"02"} />
-            <WorkPrinciples numberSection={"01"} />
-            <Separator />
+            {/* <Separator /> */}
         </div>
     );
 }

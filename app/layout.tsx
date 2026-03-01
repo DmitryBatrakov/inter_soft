@@ -30,7 +30,7 @@ export default function RootLayout({
         <html
             lang="en"
             suppressHydrationWarning
-            className="overflow-x-hidden"
+            className=""
         >
             <body className={`${inter.variable} ${russoOne.variable} antialiased relative`}>
                 <NextIntlClientProvider>
@@ -41,7 +41,7 @@ export default function RootLayout({
                         disableTransitionOnChange
                     >
                         <Header />
-                        <main className="mx-auto max-w-7xl w-full px-4 pt-18 md:pt-22">
+                        <main className="mx-auto w-full">
                             {children}
                         </main>
                     </ThemeProvider>
