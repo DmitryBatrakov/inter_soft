@@ -14,14 +14,14 @@ import {
     DrawerTrigger,
 } from "../ui/drawer";
 import { HiOutlineMenu } from "react-icons/hi";
-import { IoClose } from "react-icons/io5";
+
 
 export const Header = () => {
     const t = useTranslations("Header");
 
     return (
-        <header className="flex justify-center items-center py-5 px-2 w-full fixed top-0 left-0 right-0 z-50 bg-background/50 backdrop-blur-xl">
-            <nav className="justify-between items-center max-w-7xl w-full hidden lg:flex">
+        <header className="flex justify-center items-center py-5 px-2 w-full fixed top-0 left-0 right-0 z-50 bg-background/50 backdrop-blur-xl font-heading">
+            <nav className="justify-between items-center max-w-7xl w-full hidden lg:flex px-3">
                 <div>
                     <p>Inter SOFT</p>
                 </div>
@@ -56,11 +56,13 @@ export const Header = () => {
                         <DrawerTrigger>
                             <HiOutlineMenu className="w-6 h-6" />
                         </DrawerTrigger>
-                        <DrawerContent
-                            className="min-h-screen drawer-slow">
+                        <DrawerContent className="min-h-screen drawer-slow font-heading">
                             <DrawerHeader>
                                 <DrawerTitle>Menu</DrawerTitle>
                             </DrawerHeader>
+                            <Link href="/">{t("services")}</Link>
+                            <Link href="/">{t("contacts")}</Link>
+                            <Link href="/">{t("blog")}</Link>
                             <DrawerFooter>
                                 <DrawerClose asChild>
                                     <AnimatedButton>Close</AnimatedButton>

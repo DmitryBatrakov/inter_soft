@@ -1,15 +1,16 @@
 import { HeroBanner } from "@/components/banners/hero-banner";
+import { SpinningFigure } from "@/shared/spinning-fidure/spinning-figure";
 import Link from "next/link";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 
 export const Hero = () => {
     return (
-        <section className="flex flex-col items-center justify-center w-full min-h-screen relative gap-10 md:gap-0 mx-auto">
-            <div className="w-full flex flex-col items-start justify-center z-10 col-span-1 md:col-span-2  lg:pt-20">
-                <p className="font-heading text-[0.9rem] lg:text-[1.3rem]">
+        <section className="flex flex-col items-center justify-center w-full min-h-screen relative mx-auto gap-40 md:gap-15 max-w-7xl">
+            <div className="w-full flex flex-col items-start justify-center z-10 col-span-1 md:col-span-2  lg:pt-20 lg:mt-10">
+                <p className="font-heading text-[0.9rem] md:text-[1rem] lg:text-[1.3rem]">
                     Software development company: Iter Soft
                 </p>
-                <h1 className="text-[2rem] md:text-[5rem] uppercase leading-none ">
+                <h1 className="text-[2rem] md:text-[4rem] lg:text-[5rem] uppercase leading-none ">
                     Reliable and
                     <br />
                     <span className="inline-block border-3 border-primary rounded-md px-1 md:px-2">
@@ -37,24 +38,13 @@ export const Hero = () => {
                     </Link>
                 </HeroBanner>
             </div>
-            <span
-                className="absolute rotate-45 animate-spin animation-duration-[25s] border-secondary 
-                w-40 h-40 
-                md:w-100 md:h-100 
-                lg:w-190 lg:h-190 
-                
-                border-30 
-                md:border-50 
-                lg:border-100 
-                
-                rounded-[50px] 
-                md:rounded-[100px] 
-                lg:rounded-[200px] 
-                
-                -top-20 right-20 
-                md:top-22 md:right-0 
-                lg:top-22 lg:-right-55  
-                "
+            <SpinningFigure
+                w="w-50 md:w-100 lg:w-190"
+                h="h-50 md:h-100 lg:h-190"
+                border="border-30 md:border-50 lg:border-100"
+                rounded="rounded-[50px] md:rounded-[100px] lg:rounded-[200px]"
+                top="top-25 md:top-22 lg:top-22"
+                right="-right-5 md:right-0 lg:-right-55"
             />
         </section>
     );
