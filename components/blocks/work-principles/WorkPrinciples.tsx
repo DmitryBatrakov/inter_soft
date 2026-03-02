@@ -57,7 +57,7 @@ const cardData: CardData[] = [
 
 export const WorkPrinciples = ({ numberSection }: WorkPrinciplesProps) => {
     return (
-        <section className="w-full min-h-screen mx-auto flex flex-col items-center justify-center px-4">
+        <section className="w-full min-h- mx-auto flex flex-col items-center justify-center px-4">
             <div className="w-full flex items-center justify-between max-w-7xl pt-4">
                 <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem]">
                     work principles
@@ -71,8 +71,8 @@ export const WorkPrinciples = ({ numberSection }: WorkPrinciplesProps) => {
                     <Ticker text="About us" />
                 </div>
             </div>
-            <div className="flex flex-col max-w-7xl w-full relative">
-                <div className="flex flex-col items-start justify-start max-w-2xl w-full gap-3 z-10">
+            <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start max-w-full lg:max-w-7xl w-full relative">
+                <div className="flex flex-col items-start justify-start  lg:max-w-2xl w-full gap-3 z-10">
                     <p className="text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium font-inter text-muted-fo">
                         We are a professional studio that has been creating
                         digital products for businesses for over 10 years.
@@ -90,32 +90,32 @@ export const WorkPrinciples = ({ numberSection }: WorkPrinciplesProps) => {
                     </p>
                 </div>
                 <div className="w-full flex justify-center lg:justify-end items-center py-10 ">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 z-10">
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 z-10">
                         {cardData.map((card) => (
                             <Card
-                                className="h-80 w-80 justify-between items-start rounded-lg bg-transparent backdrop-blur-xl"
+                                className="max-w-[300px] min-h-[280px] lg:max-h-80 lg:max-w-80 lg:min-w-[280px] lg:min-h-[300px]   justify-between items-start rounded-lg bg-transparent backdrop-blur-xl px-4 pb-4 lg:px-4"
                                 key={card.title}
                             >
-                                <CardHeader>
+                                <CardHeader className="p-0">
                                     <CardTitle className="w-full">
                                         <div className="flex relative w-full">
-                                            <div className="text-[6rem] pt-3 tracking-wide uppercase">
+                                            <div className="text-[5rem] lg:text-[7rem] p-0 tracking-wide uppercase">
                                                 {card.title}
                                             </div>
-                                            <div className="absolute -top-1 -right-6 p-2 bg-primary/40 rounded-md w-10 h-10 flex items-center justify-center">
+                                            <div className="absolute -top-4 -right-5 p-2 bg-primary/40 rounded-md w-10 h-10 flex items-center justify-center">
                                                 <span className="font-bold text-2xl text-primary">
                                                     <FaPlus size={20} />
                                                 </span>
                                             </div>
                                         </div>
                                     </CardTitle>
-                                    <CardContent className="w-full p-0 -mt-4">
-                                        <span className="block w-full uppercase text-[0.9rem]">
+                                    <CardContent className="w-full p-0 -mt-3">
+                                        <span className="block w-full uppercase text-[1rem]">
                                             {card.subtitle}
                                         </span>
                                     </CardContent>
                                 </CardHeader>
-                                <CardFooter className="font-inter font-medium">
+                                <CardFooter className="font-inter font-medium px-0">
                                     {card.description}
                                 </CardFooter>
                             </Card>
@@ -124,7 +124,7 @@ export const WorkPrinciples = ({ numberSection }: WorkPrinciplesProps) => {
                 </div>
                 <SpinningFigure
                     className="hidden md:block"
-                    top="md:top-150 lg:top-70"
+                    top="md:top-90 lg:top-70"
                     left="md:left-50 lg:-left-40"
                     w="md:w-100 lg:w-150"
                     h="md:h-100 lg:h-150"

@@ -19,7 +19,7 @@
     --secondary-foreground: #111214;
 
     --muted: #f5f5f5;
-    --muted-foreground: #737373; /* серый текст */
+    --muted-foreground: #dbdbdb; /* серый текст */
 
     --accent: #303030;
     --accent-foreground: #111214;
@@ -68,7 +68,7 @@
     --btn-hover-text: #ffffff; /* hover text in dark */
     
     --background: #111214;
-    --foreground: #fafafa;
+    --foreground: #ffffff;
 
     --primary: #ffc123; /* жёлтый — главный акцент */
     --primary-foreground: #111214; /* текст на жёлтом */
@@ -77,7 +77,7 @@
     --secondary-foreground: #fafafa;
 
     --muted: #303030;
-    --muted-foreground: #cccccc;
+    --muted-foreground: #b6b6b6;
 
     --accent: #303030;
     --accent-foreground: #fafafa;
