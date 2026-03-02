@@ -57,8 +57,8 @@ const cardData: CardData[] = [
 
 export const WorkPrinciples = ({ numberSection }: WorkPrinciplesProps) => {
     return (
-        <section className="w-full min-h- mx-auto flex flex-col items-center justify-center px-4">
-            <div className="w-full flex items-center justify-between max-w-7xl pt-4">
+        <section className="w-full min-h- mx-auto flex flex-col items-center justify-center px-4 py-6">
+            <div className="w-full flex items-center justify-between max-w-7xl ">
                 <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem]">
                     work principles
                 </span>

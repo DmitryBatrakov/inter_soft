@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/footer/Footer";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -44,6 +45,7 @@ export default function RootLayout({
                         <main className="mx-auto w-full">
                             {children}
                         </main>
+                        <Footer />
                     </ThemeProvider>
                 </NextIntlClientProvider>
             </body>
