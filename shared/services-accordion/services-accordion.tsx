@@ -21,29 +21,6 @@ type ServiceItem = {
 const items: ServiceItem[] = [
     {
         id: "01",
-        title: "Design",
-        links: [
-            {
-                label: "Web Desgin",
-                href: "/services/web-design",
-            },
-            {
-                label: "Banner design",
-                href: "/services/banner-design",
-            },
-            {
-                label: "Application design",
-                href: "/services/application-design",
-            },
-            {
-                label: "Design of logo and brandbooks",
-                href: "/services/logo-and-brandbooks",
-            },
-        ],
-        image: "/assets/images/accordion/web.png",
-    },
-    {
-        id: "02",
         title: "Web Sites",
         links: [
             {
@@ -64,6 +41,29 @@ const items: ServiceItem[] = [
             },
         ],
         image: "https://picsum.photos/id/237/200/300",
+    },
+    {
+        id: "02",
+        title: "Design",
+        links: [
+            {
+                label: "Web Desgin",
+                href: "/services/web-design",
+            },
+            {
+                label: "Banner design",
+                href: "/services/banner-design",
+            },
+            {
+                label: "Application design",
+                href: "/services/application-design",
+            },
+            {
+                label: "Design of logo and brandbooks",
+                href: "/services/logo-and-brandbooks",
+            },
+        ],
+        image: "/assets/images/accordion/web.png",
     },
     {
         id: "03",
@@ -116,7 +116,7 @@ export function ServicesAccordion() {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-        <div className="flex flex-col lg:flex-row w-full h-[580px] gap-2">
+        <div className="flex flex-col lg:flex-row w-full h-[600px] gap-2">
             {items.map((item, i) => {
                 const active = i === activeIndex;
 

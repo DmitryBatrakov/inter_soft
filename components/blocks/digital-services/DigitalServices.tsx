@@ -9,9 +9,9 @@ type DigitalServicesProps = {
 
 export const DigitalServices = ({ numberSection }: DigitalServicesProps) => {
     return (
-        <section className="w-full min-h-screen flex flex-col items-center justify-start mx-auto bg-foreground px-4">
+        <section className="w-full min-h-screen flex flex-col items-center justify-start mx-auto bg-foreground px-4 py-6">
             <div className="w-full flex flex-col items-center justify-between ">
-                <div className="w-full flex items-center justify-between z-10 max-w-7xl  pt-4">
+                <div className="w-full flex items-center justify-between z-10 max-w-7xl ">
                     <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] text-secondary">
                         digital services
                     </span>
