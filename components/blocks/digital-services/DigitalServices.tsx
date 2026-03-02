@@ -1,6 +1,6 @@
 "use client";
 
-import { OurServices } from "@/shared/our-services/OurServices";
+import { ServicesAccordion } from "@/shared/services-accordion/services-accordion";
 import { Ticker } from "@/shared/ticker/Ticker";
 
 type DigitalServicesProps = {
@@ -9,20 +9,26 @@ type DigitalServicesProps = {
 
 export const DigitalServices = ({ numberSection }: DigitalServicesProps) => {
     return (
-        <section className="w-full min-h-screen flex flex-col items-center justify-start mx-auto bg-muted-foreground px-4">
-            <div className="w-full flex items-center justify-between z-10 max-w-7xl pt-4">
-                <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem]">
-                    digital services
-                </span>
-                <span className="text-black font-heading px-3 py-1 bg-secondary dark:bg-accent-foreground rounded-md ">
-                    {numberSection}
-                </span>
+        <section className="w-full min-h-screen flex flex-col items-center justify-start mx-auto bg-foreground px-4">
+            <div className="w-full flex flex-col items-center justify-between ">
+                <div className="w-full flex items-center justify-between z-10 max-w-7xl  pt-4">
+                    <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] text-secondary">
+                        digital services
+                    </span>
+                    <span className="text-black font-heading px-3 py-1 bg-secondary dark:bg-accent-foreground rounded-md ">
+                        {numberSection}
+                    </span>
+                </div>
+                <div className="w-full">
+                    <Ticker
+                        text="Our servies"
+                        strokeColor="transparent"
+                        textColor="var(--muted-foreground)"
+                    />
+                </div>
             </div>
-            <div className="w-full">
-                <Ticker text="Our servies" strokeColor="transparent"  textColor="white"/>
-            </div>
-            <div className=" w-full max-w-7xl flex items-center justify-center">
-                <OurServices />
+            <div className=" w-full h-full max-w-7xl lg:mt-20 flex items-center justify-center">
+                <ServicesAccordion />
             </div>
         </section>
     );
