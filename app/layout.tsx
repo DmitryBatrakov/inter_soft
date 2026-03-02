@@ -1,20 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/theme-provider/theme-provider";
 import { Header } from "@/components/header/Header";
 import { NextIntlClientProvider } from "next-intl";
+import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/footer/Footer";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+const inter = Inter({
+    variable: "--font-inter",
     subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
+})
 
 const russoOne = localFont({
     src: "../lib/fonts/RussoOne-Regular.ttf",
@@ -32,10 +28,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning className="overflow-clip">
-            <body
-                className={`${geistSans.variable} ${geistMono.variable} ${russoOne.variable} antialiased relative`}
-            >
+        <html
+            lang="en"
+            suppressHydrationWarning
+            className=""
+        >
+            <body className={`${inter.variable} ${russoOne.variable} antialiased relative`}>
                 <NextIntlClientProvider>
                     <ThemeProvider
                         attribute="class"
@@ -44,9 +42,10 @@ export default function RootLayout({
                         disableTransitionOnChange
                     >
                         <Header />
-                        <main className="mx-auto max-w-7xl w-full px-4 ">
+                        <main className="mx-auto w-full">
                             {children}
                         </main>
+                        <Footer />
                     </ThemeProvider>
                 </NextIntlClientProvider>
             </body>
