@@ -126,7 +126,7 @@ export function ServicesAccordion() {
                         onMouseEnter={() => setActiveIndex(i)}
                         onFocus={() => setActiveIndex(i)}
                         className={cn(
-                            "relative rounded-2xl bg-gray-200 transition-all duration-500 ease-out overflow-hidden",
+                            "relative rounded-2xl bg-neutral-200 transition-all duration-500 ease-out overflow-hidden",
                             active ? "flex-6" : "flex-1",
                         )}
                     >

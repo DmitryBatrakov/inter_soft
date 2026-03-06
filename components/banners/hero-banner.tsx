@@ -45,13 +45,13 @@ export const HeroBanner = ({
                 <h2 className="text-xl md:text-3xl font-semibold text-accent text-center">{title}</h2>
 
                 {subtitle && (
-                    <p className="text-muted-foreground">{subtitle}</p>
+                    <p className="text-accent">{subtitle}</p>
                 )}
 
-                {description && <p className="mt-4 text-muted-foreground">{description}</p>}
+                {description && <p className="mt-4 text-muted-accent">{description}</p>}
 
                 {subdescription && (
-                    <p className="text-muted-foreground">{subdescription}</p>
+                    <p className="text-muted-accent">{subdescription}</p>
                 )}
 
                 {children && <div className="mt-6">{children}</div>}
