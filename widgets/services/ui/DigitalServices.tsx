@@ -1,6 +1,6 @@
 "use client";
 
-import { ServicesAccordionHome } from "@/features/ui/services-accordion-home";
+import { ServicesAccordionHome } from "@/features/services-accordion/ui/services-accordion-home";
 import { Ticker } from "@/shared/ticker/Ticker";
 
 type DigitalServicesProps = {
