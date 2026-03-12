@@ -1,13 +1,13 @@
-import { HeroBanner } from "@/components/banners/hero-banner";
+import { HeroBanner } from "@/widgets/banners/hero-banner";
 import { SpinningFigure } from "@/shared/spinning-fidure/spinning-figure";
 import Link from "next/link";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 
 export const Hero = () => {
     return (
-        <section className="flex flex-col items-center justify-center w-full min-h-screen px-2 overflow-hidden">
+        <section className="flex flex-col items-center justify-center w-full min-h-screen px-2 overflow-x-clip bg-background relative z-10">
             <div className="max-w-7xl w-full relative">
-                <div className=" flex flex-col items-start justify-center col-span-1 md:col-span-2 lg:pt-20 z-10">
+                <div className=" flex flex-col items-start justify-center col-span-1 md:col-span-2 lg:pt-20 z-10 relative">
                     <p className="font-heading text-[0.9rem] lg:text-[1.3rem]">
                         Software development company: Iter Soft
                     </p>
@@ -41,12 +41,12 @@ export const Hero = () => {
                     </HeroBanner>
                 </div>
                 <SpinningFigure
-                    w="w-50 md:w-100 lg:w-190"
-                    h="h-50 md:h-100 lg:h-190"
+                    w="w-50 md:w-100 lg:w-175"
+                    h="h-50 md:h-100 lg:h-175"
                     border="border-30 md:border-50 lg:border-100"
                     rounded="rounded-[50px] md:rounded-[100px] lg:rounded-[200px]"
-                    top="-top-5 md:top-22 lg:-top-5"
-                    right="-right-10 md:right-0 lg:-right-85"
+                    top="-top-5 md:top-22 lg:top-5"
+                    right="-right-10 md:right-0 lg:-right-35"
 
                 />
             </div>

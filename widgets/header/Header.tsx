@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ThemeToggle } from "../theme-provider/toggle-theme";
+import { ThemeToggle } from "../../shared/providers/theme-provider/toggle-theme";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { AnimatedButton } from "@/shared/amimated-button/animated-button";
@@ -18,7 +18,7 @@ import {
 import { HiOutlineMenu } from "react-icons/hi";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { cn } from "@/lib/utils";
-import { ServicesAccordion } from "@/shared/services-accordion/services-accordion";
+import { ServicesAccordionHome } from "@/features/ui/services-accordion-home";
 import { useRef, useState } from "react";
 
 export const Header = () => {
@@ -40,7 +40,7 @@ export const Header = () => {
     return (
         <header
             className={cn(
-                "flex justify-center items-center py-5 px-2 w-full fixed top-0 left-0 right-0 z-50 bg-background transition-all duration-400 ease-in-out delay-100",
+                "flex justify-center items-center py-5 px-2 w-full fixed top-0 left-0 right-0 z-20 bg-background transition-all duration-400 ease-in-out delay-100",
                 direction === "down" ? " -translate-y-full" : "translate-y-0",
             )}
         >
@@ -52,7 +52,7 @@ export const Header = () => {
 
                 <ul className="flex items-center gap-10 text-sm">
                     <li className="hover:text-primary transition-all duration-300 ease-in-out">
-                        <Link href="/">Contacts</Link>
+                        <Link href="/contact">Contacts</Link>
                     </li>
 
                     <li
@@ -91,7 +91,7 @@ export const Header = () => {
                     ].join(" ")}
                 >
                     <div className="rounded-2xl border bg-popover p-4 shadow-xl mt-3">
-                        <ServicesAccordion />
+                        <ServicesAccordionHome />
                     </div>
                 </div>
             </nav>
@@ -101,11 +101,11 @@ export const Header = () => {
                 </div>
                 <div className="flex items-center justify-center gap-2">
                     <ThemeToggle />
-                    <Drawer direction="top">
+                    <Drawer direction="top" aria-controls="mobile-menu-drawer">
                         <DrawerTrigger>
                             <HiOutlineMenu className="w-6 h-6" />
                         </DrawerTrigger>
-                        <DrawerContent className="min-h-screen drawer-slow">
+                        <DrawerContent className="min-h-screen drawer-slow" id="mobile-menu-drawer">
                             <DrawerHeader>
                                 <DrawerTitle>Menu</DrawerTitle>
                             </DrawerHeader>

@@ -1,6 +1,6 @@
 "use client";
 
-import { ServicesAccordion } from "@/shared/services-accordion/services-accordion";
+import { ServicesAccordionHome } from "@/features/ui/services-accordion-home";
 import { Ticker } from "@/shared/ticker/Ticker";
 
 type DigitalServicesProps = {
@@ -9,9 +9,9 @@ type DigitalServicesProps = {
 
 export const DigitalServices = ({ numberSection }: DigitalServicesProps) => {
     return (
-        <section className="w-full min-h-screen flex flex-col items-center justify-start mx-auto bg-foreground px-4 py-6">
+        <section className="w-full  flex flex-col items-center justify-start mx-auto bg-foreground px-4 py-6 relative z-20 h-full">
             <div className="w-full flex flex-col items-center justify-between ">
-                <div className="w-full flex items-center justify-between z-10 max-w-7xl ">
+                <div className="w-full flex items-center justify-between max-w-7xl ">
                     <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] text-secondary">
                         digital services
                     </span>
@@ -28,7 +28,7 @@ export const DigitalServices = ({ numberSection }: DigitalServicesProps) => {
                 </div>
             </div>
             <div className=" w-full h-full max-w-7xl lg:mt-20 flex items-center justify-center">
-                <ServicesAccordion />
+                <ServicesAccordionHome />
             </div>
         </section>
     );

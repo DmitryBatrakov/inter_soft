@@ -26,7 +26,7 @@ export function SpinningFigure({
     return (
         <span
             className={cn(
-                "absolute pointer-events-none rotate-45 animate-spin animation-duration-[25s] border dark:border-secondary border-muted-foreground -z-10 dark:text-white text-black",
+                "absolute pointer-events-none rotate-45 animate-spin animation-duration-[25s] border dark:border-secondary border-muted-foreground z-0 dark:text-white text-black",
                 top,
                 left,
                 right,

@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/theme-provider/theme-provider";
-import { Header } from "@/components/header/Header";
-import { NextIntlClientProvider } from "next-intl";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Footer } from "@/components/footer/Footer";
 
 const inter = Inter({
     variable: "--font-inter",
     subsets: ["latin"],
-})
+});
 
 const russoOne = localFont({
     src: "../lib/fonts/RussoOne-Regular.ttf",
@@ -28,26 +24,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html
-            lang="en"
-            suppressHydrationWarning
-            className=""
-        >
-            <body className={`${inter.variable} ${russoOne.variable} antialiased relative`}>
-                <NextIntlClientProvider>
-                    <ThemeProvider
-                        attribute="class"
-                        defaultTheme="system"
-                        enableSystem
-                        disableTransitionOnChange
-                    >
-                        <Header />
-                        <main className="mx-auto w-full">
-                            {children}
-                        </main>
-                        <Footer />
-                    </ThemeProvider>
-                </NextIntlClientProvider>
+        <html lang="en" suppressHydrationWarning>
+            <body
+                className={`${inter.variable} ${russoOne.variable} antialiased relative`}
+            >
+                {children}
             </body>
         </html>
     );
