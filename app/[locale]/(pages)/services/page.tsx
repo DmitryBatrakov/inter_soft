@@ -21,7 +21,7 @@ export default function ServicesPage() {
                             <Card
                                 key={item.id}
                                 className="px-4 py-6 lg:px-8 lg:py-6 bg-transparent backdrop-blur-2xl min-h-[250px] md:min-h-[350px] lg:min-h-[500px] md:max-w-[600px]  flex flex-col justify-between group transition-all duration-300 hover:bg-primary border p-4
-                                   [--stroke-color:#ffffffa1] hover:[--stroke-color:white]"
+                                   [--stroke-color:var(--muted-foreground)] hover:[--stroke-color:white]"
                             >
                                 <CardHeader>
                                     <CardTitle className="w-full">
