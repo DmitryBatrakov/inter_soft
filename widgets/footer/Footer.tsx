@@ -10,9 +10,9 @@ import { BsInstagram } from "react-icons/bs";
 
 export const Footer = () => {
     return (
-        <footer className="w-full flex flex-col items-center justify-center mx-auto px-4 py-6 overflow-hidden">
-            <div className="max-w-7xl w-full py-20 relative grid grid-cols-1 items-start justify-center gap-10">
-                <div className="flex flex-col lg:flex-row items-center md:items-start justify-center md:justify-between gap-20 md:gap-10">
+        <footer className="w-full flex flex-col items-center justify-center mx-auto px-4 py-6 overflow-x-clip relative bg-background">
+            <div className="max-w-7xl w-full py-10 lg:py-0 lg:pt-20 lg:pb-10 relative grid grid-cols-1 items-start justify-center gap-10">
+                <div className="flex flex-col lg:flex-row items-center md:items-start justify-center md:justify-between gap-20 md:gap-10 relative z-10">
                     <div className="flex flex-col items-start justify-start text-5xl md:text-6xl lg:text-8xl uppercase h-full">
                         <span>Inter</span>
                         <span>Soft</span>
@@ -27,7 +27,7 @@ export const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row items-start justify-end gap-15 md:gap-30 text-secondary-foreground">
+                <div className="flex flex-col md:flex-row items-start justify-end gap-15 md:gap-30 text-secondary-foreground relative z-10">
                     <div className="flex flex-col gap-5 w-96">
                         <div>
                             <p className="font-inter text-xl font-semibold">
@@ -82,12 +82,12 @@ export const Footer = () => {
                 </div>
                 <SpinningFigure
                     className="md:block"
-                    top="-top-5 md:top-0 lg:top-0"
-                    left="-left-13 md:left-50 lg:-left-50"
+                    top="-top-10 md:-top-2 lg:top-5"
+                    left="-left-13 md:left-100 lg:-left-45"
                     w="w-70 md:w-90 lg:w-120"
                     h="h-70 md:h-90 lg:h-120"
-                    border="border-45 md:border-55 lg:border-70"
-                    rounded="rounded-[100px] md:rounded-[90px] lg:rounded-[160px]"
+                    border="border-45 md:border-55 lg:border-80"
+                    rounded="rounded-[100px] md:rounded-[90px] lg:rounded-[170px]"
                 />
             </div>
         </footer>

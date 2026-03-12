@@ -1,19 +1,7 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { ReactNode } from "react";
 import DotPattern from "@/shared/icons/DotPattern";
-
-type HeroBannerProps = {
-    title: string;
-    subtitle?: string;
-    description?: string;
-    subdescription?: string;
-    image?: string | StaticImageData;
-    className?: string;
-    variant?: "primary" | "secondary";
-    icon?: ReactNode;
-    children?: ReactNode;
-};
+import { HeroBannerProps } from "@/entities/banners/model/type";
 
 export const HeroBanner = ({
     title,
@@ -34,7 +22,7 @@ export const HeroBanner = ({
     return (
         <section
             className={cn(
-                "rounded-2xl p-5 w-full z-10 grid grid-cols-1 relative h-full min-h-48 overflow-hidden",
+                "rounded-2xl p-5 w-full grid grid-cols-1 relative h-full min-h-48 overflow-hidden",
                 variantStyles[variant],
                 className,
             )}
