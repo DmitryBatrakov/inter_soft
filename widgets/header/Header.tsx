@@ -18,13 +18,16 @@ import {
 import { HiOutlineMenu } from "react-icons/hi";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { cn } from "@/lib/utils";
-import { ServicesAccordionHome } from "@/features/ui/services-accordion-home";
+import { ServicesAccordionHome } from "@/features/services-accordion/ui/services-accordion-home";
 import { useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export const Header = () => {
     const t = useTranslations("Header");
     const direction = useScrollDirection(10);
     const [servicesOpen, setServicesOpen] = useState(false);
+
+    const router = useRouter();
 
     const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -64,6 +67,7 @@ export const Header = () => {
                             type="button"
                             className="hover:text-primary transition-all duration-300"
                             aria-expanded={servicesOpen}
+                            onClick={() => router.push("/services")}
                         >
                             Services
                         </button>
