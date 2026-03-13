@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import Image from "next/image";
-import { items } from "@/entities/services/model/data";
+import { items } from "@/entities/service/data/service-items";
 
 export function ServicesAccordionHome() {
     const [activeIndex, setActiveIndex] = useState(0);

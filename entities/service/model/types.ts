@@ -9,3 +9,6 @@ export type ServiceItem = {
     links: ServiceLink[];
     image: string;
 };
+
+
+

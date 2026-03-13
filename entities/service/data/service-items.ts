@@ -1,4 +1,4 @@
-import { ServiceItem } from "./type";
+import { ServiceItem } from "../model/types";
 
 export const items: ServiceItem[] = [
     {
@@ -93,3 +93,8 @@ export const items: ServiceItem[] = [
         image: "/assets/images/accordion/web.png",
     },
 ];
+
+
+export const dynamicServicePageData = [
+    {}
+]
