@@ -1,6 +1,7 @@
 import { getServicePageData } from "@/entities/service/lib/getServicePageData";
 import { FaqServices } from "@/widgets/services/ui/FaqServices";
 import { HeroServices } from "@/widgets/services/ui/HeroServices";
+import { ProjectWorkService } from "@/widgets/services/ui/ProjectWorkService";
 import { notFound } from "next/navigation";
 
 export default async function DynamicServicesPage({params}: {params: Promise<{service: string}>}) {
@@ -13,9 +14,9 @@ export default async function DynamicServicesPage({params}: {params: Promise<{se
 
 
     return (
-        <div>
-            <p>Dynamic Service page</p>
+        <div className="w-full min-h-screen mx-auto flex flex-col items-center justify-center relative overflow-x-clip">
             <HeroServices data={data.hero}/>
+            <ProjectWorkService numberSection={"01"} />
             <FaqServices data={data.faq} />
         </div>
     );

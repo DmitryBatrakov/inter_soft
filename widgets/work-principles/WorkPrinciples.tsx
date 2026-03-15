@@ -34,7 +34,7 @@ export const WorkPrinciples = ({ numberSection }: WorkPrinciplesProps) => {
             </div>
             <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start max-w-full lg:max-w-7xl w-full relative">
                 <div className="flex flex-col items-start justify-start  lg:max-w-2xl w-full gap-3 relative z-10">
-                    <p className="text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium font-inter text-muted-fo">
+                    <p className="text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium font-inter text-muted-foreground">
                         We are a professional studio that has been creating
                         digital products for businesses for over 10 years.
                     </p>

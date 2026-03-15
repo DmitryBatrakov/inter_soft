@@ -6,21 +6,21 @@ import { BsCheckLg } from "react-icons/bs";
 
 export const HeroServices = ({ data }: { data: HeroData }) => {
     return (
-        <section className="w-full flex flex-col items-center justify-center min-h-screen overflow-x-clip relative">
-            <div className="max-w-7xl w-full relative flex flex-col gap-10 items-center justify-start z-10 p-4 mb-10">
+        <section className="w-full flex flex-col items-center justify-center min-h-screen overflow-x-clip relative mt-10">
+            <div className="max-w-7xl w-full relative flex flex-col gap-10 items-center justify-start z-10 p-4">
                 <h1 className="uppercase leading-none text-center ">
-                    <span className="mr-2 md:mr-5 text-primary text-[2.5rem] md:text-[3rem] lg:text-[5rem]">
+                    <span className="mr-2 md:mr-5 text-primary text-[2.5rem] md:text-[3rem] font-light lg:text-[5rem]">
                         {data.titlePrefix}
                     </span>
                     <span className="relative inline-block uppercase text-primary">
-                        <span className="relative z-10 text-foreground font-black text-[2.5rem] md:text-[3rem] lg:text-[5rem]">
+                        <span className="relative z-10 text-foreground text-[2.5rem] md:text-[3rem] lg:text-[5rem] font-light">
                             {data.title}
                         </span>
                         <span
-                            className="absolute inset-[2px] md:inset-[4px] border-2 md:border-3  border-primary rounded-md lg:rounded-xl z-0
+                            className="absolute inset-[2px] md:inset-y-[3px] lg:inset-y-[9px]  border-2 md:border-3  border-primary rounded-md lg:rounded-xl z-0
                                         translate-x-[8px] translate-y-[6px]
                                         md:translate-x-[16px] md:translate-y-[8px]
-                                        lg:translate-x-[20px] lg:translate-y-[10px]"
+                                        lg:translate-x-[20px] lg:translate-y-[9px]"
                             aria-hidden
                         />
                     </span>
@@ -54,8 +54,8 @@ export const HeroServices = ({ data }: { data: HeroData }) => {
             <SpinningFigure
                 w="w-75 md:w-115 lg:w-140"
                 h="h-75 md:h-115 lg:h-140"
-                border="border-45 md:border-70 lg:border-70"
-                rounded="rounded-[90px] md:rounded-[100px] lg:rounded-[180px]"
+                border="border-45 md:border-70 lg:border-90"
+                rounded="rounded-[110px] md:rounded-[170px] lg:rounded-[190px]"
             />
         </section>
     );

@@ -26,3 +26,16 @@ export interface ServicePageData {
     hero: HeroData;
     faq: FaqItem[];
 }
+
+export type ProjectWorkStep = {
+    step: string;
+    title: string;
+    description: string;
+}
+
+export interface ProjectWorkItem {
+    title: string;
+    tickerText: string;
+    description: string[];
+    steps: ProjectWorkStep[];
+}
