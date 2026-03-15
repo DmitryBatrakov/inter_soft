@@ -25,10 +25,10 @@ export function FaqItem({
             <div className={`absolute inset-0 bg-primary z-0 transition-transform duration-400 ease-[cubic-bezier(0.76,0,0.24,1)] origin-left
                             ${open ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}/>
             {/* Header */}
-            <div className={`relative z-10 flex items-center justify-between gap-5 px-7 py-4 lg:py-10`}>
+            <div className={`relative z-10 flex items-center justify-between gap-5 px-7 py-5  lg:py-10`}>
                 <span className={`absolute left-0 top-0 h-full w-[4px] bg-primary transition-opacity duration-200 ${open ? "opacity-0" : "opacity-100"}`}/>
                 
-                <span className={`font-black uppercase tracking-wide text-[1rem] lg:text-[1.8rem] lg:font-light leading-tight transition-colors duration-200
+                <span className={`uppercase tracking-wide text-[1rem] lg:text-[1.8rem] font-light leading-tight transition-colors duration-200
                             ${open ? "text-background" : "text-white group-hover:text-background"}`}>
                     {question}
                 </span>

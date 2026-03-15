@@ -48,16 +48,10 @@ export const ProjectWorkService = ({
                                 </span>
                             </div>
                             <div className="w-full flex flex-col gap-2">
-                                <span className="group-hover:text-primary transition-all duration-500 text-[2rem] leading-none">
+                                <span className="group-hover:text-primary transition-all duration-500 text-[2rem] leading-none text-primary md:text-white">
                                     {step.title}
                                 </span>
-                                <span
-                                    className="font-inter text-[1rem] text-accent-foreground overflow-hidden max-h-0 opacity-0 transition-all ease-in duration-500 group-hover:max-h-40 group-hover:opacity-100"
-                                    // style={{
-                                    //     transitionTimingFunction:
-                                    //         "cubic-bezier(.54,0,.52,1)",
-                                    // }}
-                                >
+                                <span className="font-inter text-[1rem] text-accent-foreground max-h-40 opacity-100 transition-all ease-in duration-500 md:overflow-hidden lg:max-h-0 lg:opacity-0 lg:group-hover:max-h-40 lg:group-hover:opacity-100">
                                     {step.description}
                                 </span>
                             </div>
