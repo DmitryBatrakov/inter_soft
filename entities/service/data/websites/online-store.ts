@@ -1,7 +1,10 @@
-export const onlineStoreData = {
+import { ServicePageData } from "../../model/types";
+
+export const onlineStoreData: ServicePageData = {
     slug: "online-store",
     hero: {
-        title: "Creating Online Stores",
+        titlePrefix: "Creating",
+        title: "Online Stores",
         benefits: [
             "Automate your sales",
             "A reliable solution without templates and constructors",

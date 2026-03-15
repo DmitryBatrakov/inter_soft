@@ -43,17 +43,17 @@ export const Header = () => {
     return (
         <header
             className={cn(
-                "flex justify-center items-center py-5 px-2 w-full fixed top-0 left-0 right-0 z-20 bg-background transition-all duration-400 ease-in-out delay-100",
+                "flex justify-center items-center py-5 px-4 w-full fixed top-0 left-0 right-0 z-20 bg-background transition-all duration-400 ease-in-out delay-100",
                 direction === "down" ? " -translate-y-full" : "translate-y-0",
             )}
         >
             <nav
-                className="relative mx-auto hidden w-full max-w-7xl items-center justify-between lg:flex"
+                className="relative mx-auto hidden w-full max-w-7xl items-center justify-between md:flex"
                 onMouseLeave={closeServices}
             >
                 <div>Inter SOFT</div>
 
-                <ul className="flex items-center gap-10 text-sm">
+                <ul className="flex items-center md:gap-8 lg:gap-10 text-sm">
                     <li className="hover:text-primary transition-all duration-300 ease-in-out">
                         <Link href="/contact">Contacts</Link>
                     </li>
@@ -99,7 +99,7 @@ export const Header = () => {
                     </div>
                 </div>
             </nav>
-            <div className="lg:hidden flex items-cemter justify-between w-full ">
+            <div className="md:hidden flex items-cemter justify-between w-full ">
                 <div className="flex items-center justify-center">
                     Inter SOFT
                 </div>

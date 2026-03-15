@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+
 import { FaArrowRight } from "react-icons/fa6";
 import Image from "next/image";
 import { items } from "@/entities/service/data/service-items";
+import { Link } from "@/i18n/navigation";
 
 export function ServicesAccordionHome() {
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState<number>(0);
 
- 
 
     return (
         <div className="flex flex-col lg:flex-row w-full h-[600px] gap-2">
@@ -68,7 +68,7 @@ export function ServicesAccordionHome() {
                                                         : "opacity-0 -translate-y-2 scale-90",
                                                 )}
                                             >
-                                                <span className="tracking-wide">
+                                                <span className="tracking-wide" >
                                                     {link.label}
                                                 </span>
                                             </Link>

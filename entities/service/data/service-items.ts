@@ -7,19 +7,19 @@ export const items: ServiceItem[] = [
         links: [
             {
                 label: "Creating Landing Pages",
-                href: "/services/landing-pages",
+                href: "/services/landing-page",
             },
             {
                 label: "Creation of Business Cards",
-                href: "/services/business-cards",
+                href: "/services/business-card",
             },
             {
                 label: "Creating Online Stores",
-                href: "/services/online-stores",
+                href: "/services/online-store",
             },
             {
                 label: "Creating Of Corporate Websites",
-                href: "/services/corporate-websites",
+                href: "/services/corporate-website",
             },
         ],
         image: "/assets/images/accordion/web.png",
@@ -95,6 +95,3 @@ export const items: ServiceItem[] = [
 ];
 
 
-export const dynamicServicePageData = [
-    {}
-]

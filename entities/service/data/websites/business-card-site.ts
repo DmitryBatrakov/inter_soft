@@ -1,7 +1,10 @@
-export const bussinessCardData = {
-    slug: "bussiness-card-site",
+import { ServicePageData } from "../../model/types";
+
+export const businessCardData: ServicePageData = {
+    slug: "business-card-site",
     hero: {
-        title: "Creating of Bussiness Card Sites",
+        titlePrefix: "Creating",
+        title: "Of Business Card Sites",
         benefits: [
             "A business card to represent your business",
             "A reliable solution without templates and constructors",

@@ -10,5 +10,19 @@ export type ServiceItem = {
     image: string;
 };
 
+export type HeroData = {
+    titlePrefix: string;
+    title: string;
+    benefits: string[];
+};
 
+export type FaqItem = {
+    question: string;
+    answer: string;
+};
 
+export interface ServicePageData {
+    slug: string;
+    hero: HeroData;
+    faq: FaqItem[];
+}

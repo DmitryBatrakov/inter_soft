@@ -1,7 +1,10 @@
-export const corporateWebsiteData = {
+import { ServicePageData } from "../../model/types";
+
+export const corporateWebsiteData: ServicePageData = {
     slug: "corporate-website",
     hero: {
-        titile: "Creating of Corporate Websites",
+        titlePrefix: "Creating",
+        title: "Corporate Websites",
         benefits: [
             "Presentation of your brand online",
             "Attracting customers and presenting your services",

@@ -1,7 +1,10 @@
-export const landingPageData = {
+import { ServicePageData } from "../../model/types";
+
+export const landingPageData: ServicePageData = {
     slug: "landing-page",
     hero: {
-        title: "Creating Landing Pages",
+        titlePrefix: "Creating",
+        title: "Landing Pages",
         benefits: [
             "A one-page site that will sell",
             "A reliable solution without templates and constructors",
