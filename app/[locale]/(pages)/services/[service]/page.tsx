@@ -19,7 +19,7 @@ export default async function DynamicServicesPage({params}: {params: Promise<{se
             <HeroServices data={data.hero}/>
             <ProjectWorkService numberSection={"01"} />
             <AdvantagesServices numberSection={"02"} />
-            <FaqServices data={data.faq} />
+            <FaqServices data={data.faq} numberSection={"03"}/>
         </div>
     );
 }

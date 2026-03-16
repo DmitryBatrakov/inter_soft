@@ -33,13 +33,13 @@ export const HeroServices = ({ data }: { data: HeroData }) => {
                         >
                             <span className="relative z-10  ">
                                 <span
-                                    className="absolute inset-0  border-2 lg:border-3  border-secondary-foreground rounded-md z-0
+                                    className="absolute inset-0  border-2 lg:border-3  border-muted-foreground rounded-xl z-0
                                         translate-x-[8px] translate-y-[8px]
                                         lg:translate-x-[12px] lg:translate-y-[12px]
                                         "
                                     aria-hidden
                                 />
-                                <span className="relative z-10 bg-secondary-foreground rounded-md  p-2 w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center">
+                                <span className="relative z-10 bg-muted-foreground rounded-xl  p-2 w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center">
                                     <BsCheckLg className="w-5 h-5  lg:w-8 lg:h-8 text-background" />
                                 </span>
                             </span>
