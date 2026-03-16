@@ -78,7 +78,7 @@ export const Header = () => {
                     </li>
                 </ul>
                 <div className="flex items-center justify-between gap-2">
-                    <ThemeToggle />
+                    {/* <ThemeToggle /> */}
                     <Button className="bg-transparent text-foreground hover:bg-accent">
                         en <ChevronDown className="w-4 h-4" />
                     </Button>
