@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 import { FaArrowRight } from "react-icons/fa6";
 import Image from "next/image";
-import { items } from "@/entities/service/data/service-items";
+import { items } from "@/entities/service/data/service-accordion-items";
 import { Link } from "@/i18n/navigation";
 
 export function ServicesAccordionHome() {

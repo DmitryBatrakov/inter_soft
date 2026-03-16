@@ -10,6 +10,12 @@ export type ServiceItem = {
     image: string;
 };
 
+export type AdvantagesAccordionItem = {
+    id: string;
+    title: string;
+    description: string;
+};
+
 export type HeroData = {
     titlePrefix: string;
     title: string;
@@ -31,7 +37,7 @@ export type ProjectWorkStep = {
     step: string;
     title: string;
     description: string;
-}
+};
 
 export interface ProjectWorkItem {
     title: string;
