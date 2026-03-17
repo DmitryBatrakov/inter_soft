@@ -22,11 +22,11 @@ export function FaqItem({
             className={`relative border-b-2 border-background overflow-hidden cursor-pointer group`}
             onClick={onToggle}
         >
-            <div className={`absolute inset-0 bg-primary z-0 transition-transform duration-400 ease-[cubic-bezier(0.76,0,0.24,1)] origin-left
+            <div className={`absolute inset-0 bg-primary z-0 transition-transform duration-100 md:duration-400 ease-[cubic-bezier(0.76,0,0.24,1)] origin-left
                             ${open ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}/>
             {/* Header */}
             <div className={`relative z-10 flex items-center justify-between gap-5 px-7 py-5  lg:py-10`}>
-                <span className={`absolute left-0 top-0 h-full w-[4px] bg-primary transition-opacity duration-200 ${open ? "opacity-0" : "opacity-100"}`}/>
+                <span className={`absolute left-0 top-0 h-full w-[4px] bg-primary transition-opacity duration-200 delay-100 ${open ? "opacity-0" : "opacity-100"}`}/>
                 
                 <span className={`uppercase tracking-wide text-[1rem] lg:text-[1.8rem] font-light leading-tight transition-colors duration-200
                             ${open ? "text-background" : "text-white group-hover:text-background"}`}>
@@ -45,7 +45,7 @@ export function FaqItem({
             </div>
 
             {/* Body with grid animation */}
-            <div className={`relative z-10 grid  transition-[grid-template-rows] duration-400 ease-[cubic-bezier(0.76,0,0.24,1)]
+            <div className={`relative z-10 grid  transition-[grid-template-rows] duration-200 delay-200 md:delay-0 md:duration-400 ease-[cubic-bezier(0.76,0,0.24,1)]
                             ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
                 <div className="overflow-hidden ">
                     <p className="px-7 pb-6 pt-1 text-[1rem] lg:text-[1.2rem] leading-[1.7] text-[#1a1a1a] font-inter font-normal text-start">

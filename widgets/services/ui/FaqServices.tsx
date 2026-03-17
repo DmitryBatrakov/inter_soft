@@ -6,7 +6,7 @@ export const FaqServices = ({ data, numberSection }: { data: FaqItemType[], numb
     return (
         <section className="w-full flex flex-col items-center justify-center min-h-screen overflow-x-clip relative">
             <Separator />
-            <div className="w-full flex items-center justify-between max-w-7xl my-4">
+            <div className="w-full flex items-center justify-between max-w-7xl my-4 p-4">
                 <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem]">
                 We understand that you are out of power
                 </span>
