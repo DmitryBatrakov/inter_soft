@@ -19,7 +19,7 @@ export const AdvantagesAccordion = () => {
                         onMouseEnter={() => setActiveIndex(i)}
                         onFocus={() => setActiveIndex(i)}
                         className={cn(
-                            "relative rounded-lg h-full bg-transparent transition-all duration-800 ease-out overflow-hidden border border-primary",
+                            "relative rounded-lg h-full bg-transparent transition-all duration-300 md:duration-800 ease-out overflow-hidden border border-primary",
                             active
                                 ? " flex-7 lg:flex-4"
                                 : "flex-2 lg:flex-1 border-accent",
