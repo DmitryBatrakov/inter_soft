@@ -10,7 +10,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function ServicesPage() {
     return (
-        <div className="w-full min-h-screen mx-auto flex items-center justify-center relative overflow-x-clip">
+        <div className="w-full min-h-screen mx-auto flex items-center justify-center relative overflow-x-clip z-10 bg-background">
             <div className="w-full max-w-7xl relative z-10 p-4 mt-10">
                 <h1 className="text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-bold mt-20 mb-10 lg:mt-30 md:mb-20">
                     Digital Marketing Services
@@ -20,12 +20,12 @@ export default function ServicesPage() {
                         return (
                             <Card
                                 key={item.id}
-                                className="px-4 py-6 lg:px-8 lg:py-6 bg-transparent backdrop-blur-2xl min-h-[250px] md:min-h-[350px] lg:min-h-[500px] md:max-w-[600px]  flex flex-col justify-between group transition-all duration-300 hover:bg-primary border p-4
+                                className="px-4 py-6 lg:px-6 lg:py-6 bg-transparent backdrop-blur-2xl min-h-[250px] md:min-h-[350px] lg:min-h-[500px] md:max-w-[600px]  flex flex-col justify-between group transition-all duration-300 hover:bg-primary border p-4
                                    [--stroke-color:var(--muted-foreground)] hover:[--stroke-color:white]"
                             >
                                 <CardHeader>
                                     <CardTitle className="w-full">
-                                        <div className="flex flex-col gap-2 items-start justify-start relative w-full">
+                                        <div className="flex flex-col items-start justify-start relative w-full">
                                             <div className=" top-0 -left-7">
                                                 <span className="font-bold text-[1.8rem] text-primary group-hover:text-black transition-colors duration-300">
                                                     {item.id}

@@ -58,4 +58,11 @@ export const onlineStoreData: ServicePageData = {
             answer: "First we need your input. Fill out the form on our website and provide information about your project, business goals, references, text content, logo, photos and other materials for the future store. If you do not have everything prepared, our manager will help you fill out a brief.",
         },
     ],
+    overview: [
+        {
+            title: "Developing an online store is an effective way to sell without any extra effort.",
+            subtitle: "Why is it necessary to order an online store?",
+            description: "Creating an online store has become not just a recommendation for those who sell goods, but rather a necessity! After all, most people no longer go to stores, fitting rooms, shopping centers. More than 1 million people annually save their time and nerves by making purchases online. It is cheaper, more convenient, faster, and overall more pleasant.",
+        },
+    ],
 };
