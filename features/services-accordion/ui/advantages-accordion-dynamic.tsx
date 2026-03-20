@@ -16,13 +16,18 @@ export const AdvantagesAccordion = () => {
                 return (
                     <article
                         key={item.id}
-                        onMouseEnter={() => setActiveIndex(i)}
                         onFocus={() => setActiveIndex(i)}
+                        onMouseEnter={() => setActiveIndex(i)}
+                        onTouchStart={(e) => {
+                            e.preventDefault();
+                            setActiveIndex(i);
+                        }}
+                        tabIndex={0}
                         className={cn(
-                            "relative rounded-lg h-full bg-transparent transition-all duration-300 md:duration-800 ease-out overflow-hidden border border-primary",
+                            "relative rounded-lg h-full bg-transparent transition-height duration-300 md:duration-700 ease-out overflow-hidden border border-primary",
                             active
-                                ? " flex-7 lg:flex-4"
-                                : "flex-2 lg:flex-1 border-accent",
+                                ? "flex-7 lg:flex-4 max-h-[600px] lg:max-h-full"
+                                : "flex-2 lg:flex-1 max-h-[70px] lg:max-h-full border-accent",
                         )}
                     >
                         <div
@@ -36,7 +41,7 @@ export const AdvantagesAccordion = () => {
                             <div className="flex-1 flex flex-col gap-5 justify-center">
                                 <h2
                                     className={cn(
-                                        "text-[1.5rem] uppercase transition-transform duration-600 ease-in-out max-w-[400px]",
+                                        "text-[1.5rem] uppercase transition-transform duration-700 ease-in-out max-w-[400px]",
                                         active
                                             ? "opacity-100 translate-x-0 scale-100 delay-150"
                                             : "opacity-0 -translate-x-100 scale-60",
@@ -46,7 +51,7 @@ export const AdvantagesAccordion = () => {
                                 </h2>
                                 <span
                                     className={cn(
-                                        "text-[1rem] transition-transform duration-600 ease-in-out font-inter max-w-[400px]",
+                                        "text-[1rem] transition-transform duration-700 ease-in-out font-inter max-w-[400px]",
                                         active
                                             ? "opacity-100 translate-x-0 scale-100 delay-300"
                                             : "opacity-0 -translate-x-100 scale-70",
