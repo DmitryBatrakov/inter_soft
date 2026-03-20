@@ -54,4 +54,11 @@ export const corporateWebsiteData: ServicePageData = {
             answer: "First we need your input. Fill out the form on our website and provide information about your expectations, materials, references, logo, photos and other content for the future website. If you don't have everything prepared, our manager will help you fill out a brief.",
         },
     ],
+    overview: [
+        {
+          title: "Landing page development is an effective way to increase conversions and sales",
+          subtitle: "Why should you choose our landing pages?",
+          description: "A corporate website is a powerful tool for presenting your business, services and values. It helps potential customers learn about your company, its mission, and offerings. A well-designed corporate website can increase brand awareness, attract new customers, and improve customer engagement.",
+        }
+      ]
 };

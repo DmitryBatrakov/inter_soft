@@ -27,10 +27,18 @@ export type FaqItem = {
     answer: string;
 };
 
+export type ServiceOverview = {
+    title: string;
+    subtitle: string;
+    description: string;
+}
+
 export interface ServicePageData {
     slug: string;
     hero: HeroData;
     faq: FaqItem[];
+    overview: ServiceOverview[];
+
 }
 
 export type ProjectWorkStep = {
