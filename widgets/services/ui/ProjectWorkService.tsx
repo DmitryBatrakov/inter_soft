@@ -10,7 +10,7 @@ export const ProjectWorkService = ({
     numberSection: string;
 }) => {
     return (
-        <section className="w-full flex flex-col items-center justify-start min-h-screen overflow-x-clip relative px-4 py-6 bg-background mx-auto">
+        <section className="w-full flex flex-col items-center justify-start min-h-screen overflow-x-clip relative px-4 py-6 bg-background mx-auto z-10">
             <Separator />
             <div className="w-full flex items-center justify-between max-w-7xl mt-4">
                 <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem]">

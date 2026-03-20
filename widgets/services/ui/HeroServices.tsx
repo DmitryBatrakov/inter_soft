@@ -6,7 +6,7 @@ import { BsCheckLg } from "react-icons/bs";
 
 export const HeroServices = ({ data }: { data: HeroData }) => {
     return (
-        <section className="w-full flex flex-col items-center justify-center min-h-screen overflow-x-clip relative mt-10">
+        <section className="w-full flex flex-col items-center justify-center min-h-screen overflow-x-clip relative mt-10 bg-background z-10">
             <div className="max-w-7xl w-full relative flex flex-col gap-10 items-center justify-start z-10 p-4 mb-20 md:mb-0">
                 <h1 className="uppercase leading-none text-center ">
                     <span className="mr-2 md:mr-5 text-primary text-[2.5rem] md:text-[3rem] font-light lg:text-[5rem]">
