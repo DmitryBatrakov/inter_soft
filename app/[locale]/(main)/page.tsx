@@ -11,9 +11,7 @@ export default function Home() {
             <WorkPrinciples numberSection={"01"} />
 
             <DigitalServices numberSection={"02"} />
-            <div className="sticky bottom-0 w-full z-0  flex items-center justify-center">
-                <Footer />
-            </div>
+            <Footer />
         </div>
     );
 }

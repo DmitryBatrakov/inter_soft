@@ -10,7 +10,7 @@ import { BsInstagram } from "react-icons/bs";
 
 export const Footer = () => {
     return (
-        <footer className="w-full flex flex-col items-center justify-center mx-auto px-4 py-6 overflow-x-clip relative bg-background">
+        <footer className="w-full flex flex-col items-center justify-center mx-auto px-4 py-6 overflow-x-clip  bottom-0 z-0 bg-background">
             <div className="max-w-7xl w-full py-10 lg:py-0 lg:pt-20 lg:pb-10 relative grid grid-cols-1 items-start justify-center gap-10">
                 <div className="flex flex-col lg:flex-row items-center md:items-start justify-center md:justify-between gap-20 md:gap-10 relative z-10">
                     <div className="flex flex-col items-start justify-start text-5xl md:text-6xl lg:text-8xl uppercase h-full">
