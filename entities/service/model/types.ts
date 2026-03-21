@@ -27,7 +27,7 @@ export type FaqItem = {
     answer: string;
 };
 
-export type ServicesOverview = {
+export type OverviewService = {
     title: string;
     subtitle: string;
     description: string;
@@ -37,7 +37,7 @@ export interface ServicePageData {
     slug: string;
     hero: HeroData;
     faq: FaqItem[];
-    overview: ServicesOverview[];
+    overview: OverviewService;
 
 }
 

@@ -72,9 +72,7 @@ export const FirstStepServices = ({
                     Start a Project
                 </AnimatedButton>
             </div>
-            <div className="max-w-7xl w-full mt-35">
-                <Separator className="bg-gray-500" />
-            </div>
+           
         </section>
     );
 };

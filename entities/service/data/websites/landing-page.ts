@@ -61,11 +61,11 @@ export const landingPageData: ServicePageData = {
             answer: "To begin, we need information about your project, business goals, references, text content, logo, and visual materials. If you don't have everything prepared, our team can help you fill out a brief.",
         },
     ],
-    overview: [
+    overview: 
         {
           title: "Landing page development is an effective way to increase conversions and sales",
           subtitle: "Why should you choose our landing pages?",
           description: "A landing page (one-page site) is the perfect solution for businesses that want to quickly convey the value of their product or service to their audience. Thanks to a clear structure, attractive design and interactive elements, the landing page focuses visitors’ attention on the key action: purchase, registration, subscription or receiving a contact."
         }
-      ]
+      
 };

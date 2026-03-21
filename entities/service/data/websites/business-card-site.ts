@@ -57,12 +57,10 @@ export const businessCardData: ServicePageData = {
             answer: "The development process typically takes 7–14 business days depending on the complexity of the design and feedback from the client.",
         },
     ],
-    overview: [
-        {
-            title: "Business cardsdevelopment is an effective way to increase conversions and sales",
-            subtitle: "Creation of business cards for the site",
-            description:
-                "When starting a business, it is necessary to immediately pour large budgets into the creation of the site. It would be much more efficient to create a small, but informative site. For example, put",
-        },
-    ],
+    overview: {
+        title: "Business cards development is an effective way to increase conversions and sales",
+        subtitle: "Creation of business cards for the site",
+        description:
+            "When starting a business, it is necessary to immediately pour large budgets into the creation of the site. It would be much more efficient to create a small, but informative site. For example, put",
+    },
 };
