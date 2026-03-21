@@ -4,7 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import { Ticker } from "@/shared/ticker/Ticker";
 import { dataWorkProcess } from "@/entities/service/data/common";
 
-export const ProjectWorkService = ({
+export const ProjectWorkServices = ({
     numberSection,
 }: {
     numberSection: string;
