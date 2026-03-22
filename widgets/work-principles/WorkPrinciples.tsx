@@ -14,7 +14,6 @@ import { SpinningFigure } from "@/shared/spinning-fidure/spinning-figure";
 import { Ticker } from "@/shared/ticker/Ticker";
 import { FaPlus } from "react-icons/fa";
 
-
 export const WorkPrinciples = ({ numberSection }: WorkPrinciplesProps) => {
     return (
         <section className="w-full min-h-screen mx-auto flex flex-col items-center justify-center px-4 py-6 bg-background relative z-10">
@@ -33,37 +32,35 @@ export const WorkPrinciples = ({ numberSection }: WorkPrinciplesProps) => {
                 </div>
             </div>
             <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start max-w-full lg:max-w-7xl w-full relative">
-                <div className="flex flex-col items-start justify-start  lg:max-w-2xl w-full gap-3 relative z-10">
-                    <p className="text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium font-inter text-muted-foreground">
-                        We are a professional studio that has been creating
-                        digital products for businesses for over 10 years.
+                <div className="flex flex-col items-start justify-start  lg:max-w-2xl w-full gap-3 relative z-10 text-muted-foreground">
+                    <p className="text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium font-inter">
+                        We are a software company building scalable digital
+                        products and systems.
                     </p>
                     <p className="text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium font-inter">
-                        Our expertise covers the development of websites,
-                        applications, platforms, chatbots, as well as product
-                        integration.
+                        From web platforms to complex integrations, we create
+                        solutions that solve real-world challenges.
                     </p>
                     <p className="text-[1rem] md:text-[1.1rem] lg:text-[1.2rem] font-medium font-inter">
-                        Under our roof, we have united experts with an
-                        incredible level of knowledge, skills, and experience.
-                        We believe in the power of effectiveness and efficiency,
-                        which are the basis of our work.
+                        Our team combines strong engineering expertise with a
+                        product-driven approach to deliver reliable and
+                        efficient results.
                     </p>
                 </div>
                 <div className="w-full flex justify-center lg:justify-end items-center py-10 relative z-10">
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
                         {cardData.map((card) => (
                             <Card
-                                className="max-w-[300px] min-h-[280px] lg:max-h-80 lg:max-w-80 lg:min-w-[280px] lg:min-h-[300px]   justify-between items-start rounded-lg bg-transparent backdrop-blur-xl px-4 pb-4 lg:px-4"
+                                className="max-w-[300px] min-h-[280px] lg:max-h-80 lg:max-w-80 lg:min-w-[280px] lg:min-h-[300px] justify-between items-start rounded-lg bg-transparent backdrop-blur-xl px-4 pb-4 lg:px-4"
                                 key={card.title}
                             >
-                                <CardHeader className="p-0">
+                                <CardHeader className="p-0 w-full">
                                     <CardTitle className="w-full">
-                                        <div className="flex relative w-full">
-                                            <div className="text-[5rem] lg:text-[7rem] p-0 tracking-wide uppercase">
+                                        <div className="inline-flex w-fit items-start">
+                                            <div className="text-[5rem] lg:text-[7rem] p-0 tracking-wide uppercase leading-none">
                                                 {card.title}
                                             </div>
-                                            <div className="absolute -top-4 -right-5 p-2 bg-primary/40 rounded-md w-10 h-10 flex items-center justify-center">
+                                            <div className="-ml-4 -mt-4 shrink-0 p-2 bg-primary/40 rounded-md w-10 h-10 flex items-center justify-center">
                                                 <span className="font-bold text-2xl text-primary">
                                                     <FaPlus size={20} />
                                                 </span>

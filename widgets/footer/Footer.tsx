@@ -21,7 +21,7 @@ export const Footer = () => {
                     <div className="flex flex-col items-center justify-center">
                         <div className="flex flex-col items-start h-full justify-center gap-5 p-5 bg-secondary rounded-md max-w-sm">
                             <p className="text-5xl uppercase">
-                                Ready to discuss your new project?
+                                READY TO TURN YOUR IDEA INTO A PRODUCT?
                             </p>
                             <AnimatedButton>Let`s begin</AnimatedButton>
                         </div>
@@ -37,21 +37,21 @@ export const Footer = () => {
                         </div>
                         <div className="flex items-start justify-start gap-5 hover:text-primary transition-all duration-200">
                             <div className="flex items-center justify-center gap-3 ">
-                                <IoPhonePortraitOutline size={25}/>
+                                <IoPhonePortraitOutline size={25} />
                                 <span>+972 00 000 00 00</span>
                             </div>
                             <FaArrowRight />
                         </div>
                         <div className="flex items-start justify-start gap-5 hover:text-primary transition-all duration-200">
                             <div className="flex items-center justify-center gap-3">
-                                <MdEmail size={25}/>
+                                <MdEmail size={25} />
                                 <span>info@intersoft.com</span>
                             </div>
                             <FaArrowRight />
                         </div>
                         <div className="flex items-start justify-start gap-5 hover:text-primary transition-all duration-200">
                             <div className="flex items-center justify-center gap-3">
-                                <FaTelegramPlane size={25}/>
+                                <FaTelegramPlane size={25} />
                                 <span>@intersoft</span>
                             </div>
                             <FaArrowRight />
@@ -66,14 +66,14 @@ export const Footer = () => {
                         </div>
                         <div className="flex items-start justify-start gap-5 hover:text-primary transition-all duration-200">
                             <div className="flex items-center justify-center gap-3">
-                                <FaFacebook  size={25}/>
+                                <FaFacebook size={25} />
                                 <span>@facebook</span>
                             </div>
                             <FaArrowRight />
                         </div>
                         <div className="flex items-start justify-start gap-5 hover:text-primary transition-all duration-200">
                             <div className="flex items-center justify-center gap-3">
-                                <BsInstagram size={25}/>
+                                <BsInstagram size={25} />
                                 <span>@instagram</span>
                             </div>
                             <FaArrowRight />

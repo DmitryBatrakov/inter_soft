@@ -6,11 +6,8 @@ import { cn } from "@/lib/utils";
 type OutlinedTextProps = {
     children: ReactNode;
     className?: string;
-    /** Цвет контура (stroke). Можно var(--color) или hex. */
     strokeColor?: string;
-    /** Цвет заливки нормального текста. */
     fillColor?: string;
-    /** Толщина контура в px. */
     strokeWidth?: number;
 };
 
@@ -25,14 +22,14 @@ export function OutlinedText({
       <span
           className={cn(
               "[-webkit-text-stroke-width:var(--sw)] [-webkit-text-stroke-color:var(--sc)]",
-              !fillColor && "text-transparent", // дефолт — прозрачная заливка
+              !fillColor && "text-transparent",
               className,
           )}
           style={
               {
                   "--sw": `${strokeWidth}px`,
                   "--sc": strokeColor,
-                  ...(fillColor && { color: fillColor }), // только если явно передан
+                  ...(fillColor && { color: fillColor }),
               } as CSSProperties
           }
       >

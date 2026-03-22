@@ -9,7 +9,7 @@ export const AdvantagesAccordion = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
     return (
-        <div className="flex flex-col lg:flex-row w-full h-[700px] lg:h-[600px] gap-2">
+        <div className="flex flex-col lg:flex-row w-full h-[700px] lg:h-[550px] gap-2">
             {advantageAccordionItems.map((item, i) => {
                 const active = i === activeIndex;
 
@@ -18,10 +18,10 @@ export const AdvantagesAccordion = () => {
                         key={item.id}
                         onFocus={() => setActiveIndex(i)}
                         onMouseEnter={() => setActiveIndex(i)}
-                        onTouchStart={(e) => {
-                            e.preventDefault();
-                            setActiveIndex(i);
-                        }}
+                        // onTouchStart={(e) => {
+                        //     e.preventDefault();
+                        //     setActiveIndex(i);
+                        // }}
                         tabIndex={0}
                         className={cn(
                             "relative rounded-lg h-full bg-transparent transition-height duration-300 md:duration-700 ease-out overflow-hidden border border-primary",

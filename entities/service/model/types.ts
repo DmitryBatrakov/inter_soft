@@ -27,7 +27,7 @@ export type FaqItem = {
     answer: string;
 };
 
-export type ServiceOverview = {
+export type OverviewService = {
     title: string;
     subtitle: string;
     description: string;
@@ -37,7 +37,7 @@ export interface ServicePageData {
     slug: string;
     hero: HeroData;
     faq: FaqItem[];
-    overview: ServiceOverview[];
+    overview: OverviewService;
 
 }
 
@@ -47,9 +47,36 @@ export type ProjectWorkStep = {
     description: string;
 };
 
+export type TextSegment = {
+    text: string;
+    variant?: "default" | "outline" | "accent";
+    breakAfter?: boolean;
+};
+
+export type FirstStep = {
+    title: string;
+    subtitle: TextSegment[];
+
+}
+
+export type WorkflowStep = {
+    step: string;
+    title: string;
+    description: string;
+}
+
+export type WorkflowData = {
+    title: string;
+    tickerText: string;
+    description: string;
+    steps: WorkflowStep[];
+}
+
 export interface ProjectWorkItem {
     title: string;
     tickerText: string;
     description: string[];
     steps: ProjectWorkStep[];
+    firstStep: FirstStep;
+    workflow: WorkflowData;
 }
