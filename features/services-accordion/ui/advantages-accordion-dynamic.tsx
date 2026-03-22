@@ -61,7 +61,7 @@ export const AdvantagesAccordion = () => {
                                 </span>
                             </div>
 
-                            <span
+                            {/* <span
                                 className={cn(
                                     "text-[2.1rem] font-bold text-primary transition-transform duration-700 ease-in-out p-2 justify-end",
                                     active
@@ -70,7 +70,7 @@ export const AdvantagesAccordion = () => {
                                 )}
                             >
                                 {item.id}
-                            </span>
+                            </span> */}
                         </div>
                         <div
                             className={cn(

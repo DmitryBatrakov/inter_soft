@@ -88,14 +88,14 @@ export const Header = () => {
                 <div
                     onMouseEnter={openServices}
                     className={[
-                        "absolute left-0 right-0 top-full mt-3 w-full",
+                        "absolute left-0 right-0 top-full mt-3",
                         "transition-all duration-200",
                         servicesOpen
                             ? "opacity-100 translate-y-0 pointer-events-auto"
                             : "opacity-0 -translate-y-2 pointer-events-none",
                     ].join(" ")}
                 >
-                    <div className="rounded-2xl border bg-popover p-4 shadow-xl mt-3">
+                    <div className="rounded-2xl w-full h-full border bg-background p-4 shadow-xl mt-3">
                         <ServicesAccordionHome setServicesOpen={setServicesOpen} />
                     </div>
                 </div>

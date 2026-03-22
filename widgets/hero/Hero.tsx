@@ -35,7 +35,7 @@ export const Hero = () => {
                 <div className="flex items-center justify-center col-span-1 md:col-span-2 relative w-full mt-40 md:mt-20 z-10">
                     <HeroBanner title={heroMainData.bannerTitle}>
                         <Link
-                            href="/contact"
+                            href="/service"
                             className="inline-flex items-center group border-2 border-accent py-1 px-2 md:py-2 md:px-3 rounded-md"
                         >
                             <span className="text-accent text-[0.9rem] md:text-xl">

@@ -16,7 +16,7 @@ export function ServicesAccordionHome({
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
     return (
-        <div className="flex flex-col lg:flex-row w-full h-[600px] gap-2">
+        <div className="flex flex-col lg:flex-row w-full h-[600px] gap-2 ">
             {items.map((item, i) => {
                 const active = i === activeIndex;
 
