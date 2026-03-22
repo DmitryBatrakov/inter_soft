@@ -51,7 +51,7 @@ export const Header = () => {
                 className="relative mx-auto hidden w-full max-w-7xl items-center justify-between md:flex"
                 onMouseLeave={closeServices}
             >
-                <div>Inter SOFT</div>
+                <Link href="/" className="text-2xl hover:scale-95 transition-scale duration-300 ease-in-out">Inter SOFT</Link>
 
                 <ul className="flex items-center md:gap-8 lg:gap-10 text-sm">
                     <li className="hover:text-primary transition-all duration-300 ease-in-out">
@@ -62,6 +62,7 @@ export const Header = () => {
                         className="relative"
                         onMouseEnter={openServices}
                         onFocus={openServices}
+                        onClick={() => setServicesOpen(false)}
                     >
                         <button
                             type="button"
@@ -95,7 +96,7 @@ export const Header = () => {
                     ].join(" ")}
                 >
                     <div className="rounded-2xl border bg-popover p-4 shadow-xl mt-3">
-                        <ServicesAccordionHome />
+                        <ServicesAccordionHome setServicesOpen={setServicesOpen} />
                     </div>
                 </div>
             </nav>

@@ -8,9 +8,12 @@ import Image from "next/image";
 import { items } from "@/entities/service/data/service-accordion-items";
 import { Link } from "@/i18n/navigation";
 
-export function ServicesAccordionHome() {
-    const [activeIndex, setActiveIndex] = useState<number>(0);
-
+export function ServicesAccordionHome({
+    setServicesOpen,
+}: {
+    setServicesOpen: (open: boolean) => void;
+}) {
+    const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
     return (
         <div className="flex flex-col lg:flex-row w-full h-[600px] gap-2">
@@ -60,6 +63,9 @@ export function ServicesAccordionHome() {
                                             className="table-row text-black opacity-50 hover:opacity-100 transition-opacity duration-300 ease-out"
                                         >
                                             <Link
+                                                onClick={() =>
+                                                    setServicesOpen(false)
+                                                }
                                                 href={link.href}
                                                 className={cn(
                                                     "table-cell align-top pr-5 text-sm uppercase whitespace-pre-line  leading-tight transition-all duration-200 ease-out",
@@ -68,7 +74,7 @@ export function ServicesAccordionHome() {
                                                         : "opacity-0 -translate-y-2 scale-90",
                                                 )}
                                             >
-                                                <span className="tracking-wide" >
+                                                <span className="tracking-wide">
                                                     {link.label}
                                                 </span>
                                             </Link>

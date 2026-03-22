@@ -6,58 +6,45 @@ export const corporateWebsiteData: ServicePageData = {
         titlePrefix: "Creating",
         title: "Corporate Websites",
         benefits: [
-            "Presentation of your brand online",
-            "Attracting customers and presenting your services",
-            "Adaptability and scalability of solutions",
+            "Professional website that builds trust in your brand",
+            "Designed to attract clients and generate leads",
+            "Scalable solution that grows with your business",
         ],
     },
     faq: [
         {
-            question: "What is a corporate site?",
-            answer: "A corporate website is a multi-page web resource that presents your business, services and values, and provides convenient access to contact information.",
+            question: "What is a corporate website?",
+            answer: "A corporate website is a multi-page platform that presents your company, services, and values while building trust with clients and partners.",
         },
         {
-            question: "What functionality does a corporate website include?",
-            answer: "It usually includes sections about the company, services, news, blog, gallery, contacts, as well as integration with CRM systems and feedback forms.",
+            question: "Can the website be integrated with CRM or other tools?",
+            answer: "Yes, we can integrate your website with CRM systems, email marketing platforms, chatbots, and other business tools.",
         },
         {
-            question: "What platform are you using for development?",
-            answer: "We work with WordPress, and we also create individual solutions based on modern frameworks depending on the project requirements.",
+            question: "Will the website be SEO-optimized?",
+            answer: "We provide basic SEO setup, including meta tags, performance optimization, and preparation for search engine indexing.",
         },
         {
-            question:
-                "Is it possible to integrate the site with CRM or other services?",
-            answer: "Yes, we can integrate your corporate website with CRM systems, email marketing tools, chatbots and other services.",
+            question: "Can I manage and update the content myself?",
+            answer: "Yes, we provide an easy-to-use admin panel that allows you to update content without technical knowledge.",
         },
         {
-            question: "Will the site be optimized for search engines?",
-            answer: "Yes, we perform basic SEO optimization including meta tags, titles and page loading speed optimization.",
+            question: "Do you provide support after launch?",
+            answer: "Yes, we offer ongoing support, including updates, maintenance, and technical assistance.",
         },
         {
-            question: "Is it possible to update the site yourself?",
-            answer: "Yes, we create websites with a WordPress admin panel that allows you to easily update content without technical knowledge.",
+            question: "How long does development take?",
+            answer: "Development typically takes 4–12 weeks depending on the scope, complexity, and feedback speed.",
         },
         {
-            question: "Do you provide technical support after launch?",
-            answer: "Yes, we provide technical support services including updates, backups and bug fixes.",
-        },
-        {
-            question: "How long does it take to develop a corporate website?",
-            answer: "The development process usually takes from 4 to 12 weeks depending on the scope of work and functional requirements.",
-        },
-        {
-            question: "What is the cost of developing a corporate website?",
-            answer: "The price depends on the design, functionality and volume of work. On average, the cost of developing a corporate website ranges from $1,200 to $2,500.",
-        },
-        {
-            question: "Where to start?",
-            answer: "First we need your input. Fill out the form on our website and provide information about your expectations, materials, references, logo, photos and other content for the future website. If you don't have everything prepared, our manager will help you fill out a brief.",
+            question: "How much does a corporate website cost?",
+            answer: "The cost depends on design, functionality, and project scope. Pricing usually starts from $1,200 and increases based on requirements.",
         },
     ],
     overview: {
-        title: "Landing page development is an effective way to increase conversions and sales",
-        subtitle: "Why should you choose our landing pages?",
+        title: "Corporate websites that strengthen your brand and scale your business",
+        subtitle: "Why choose a corporate website?",
         description:
-            "A corporate website is a powerful tool for presenting your business, services and values. It helps potential customers learn about your company, its mission, and offerings. A well-designed corporate website can increase brand awareness, attract new customers, and improve customer engagement.",
+            "A corporate website is more than just an online presence — it’s a powerful tool for building trust, presenting your company at a professional level, and supporting long-term growth. We create structured, scalable websites that reflect your brand, communicate your value, and help you attract clients and partners.",
     },
 };

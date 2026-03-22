@@ -43,7 +43,7 @@ export const ProjectWorkServices = ({
                             className="group flex flex-col items-start justify-between min-h-[450px] min-w-[250px] border border-accent rounded-md p-4 hover:bg-foreground/10 transition-all duration-500"
                         >
                             <div className="w-full flex items-end justify-end">
-                                <span className="group-hover:bg-primary transition-all duration-500 w-12 h-11 text-[1.4rem] p-1 rounded-md flex items-center justify-center bg-accent/40">
+                                <span className="group-hover:bg-primary group-hover:text-black transition-all duration-500 w-12 h-11 text-[1.4rem] p-1 rounded-md flex items-center justify-center bg-accent/40">
                                     {step.step}
                                 </span>
                             </div>

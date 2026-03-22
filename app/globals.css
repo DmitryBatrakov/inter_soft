@@ -12,7 +12,8 @@
     --background: #fafafa;
     --foreground: #111214;
 
-    --primary: #ffc123;
+    /* --primary: #ffc123; */
+    --primary: #23cfff;
     --primary-foreground: #111214; /* текст на жёлтом */
 
     --secondary: #f5f5f5;
@@ -70,7 +71,7 @@
     --background: #111214;
     --foreground: #ffffff;
 
-    --primary: #ffc123; /* жёлтый — главный акцент */
+    --primary: #ffc123; 
     --primary-foreground: #111214; /* текст на жёлтом */
 
     --secondary: #303030;

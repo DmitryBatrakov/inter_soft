@@ -6,63 +6,49 @@ export const onlineStoreData: ServicePageData = {
         titlePrefix: "Creating",
         title: "Online Stores",
         benefits: [
-            "Automate your sales",
-            "A reliable solution without templates and constructors",
-            "Quick sales functionality",
+            "Turn visitors into customers with a high-converting store",
+            "Custom-built solution tailored to your business",
+            "Smooth, fast, and intuitive buying experience",
         ],
     },
     faq: [
         {
-            question:
-                "What is included in the online store development service?",
-            answer: "Online store development includes design, programming, payment system integration, shipping settings, and basic SEO settings.",
+            question: "What is included in online store development?",
+            answer: "We handle design, development, payment integration, shipping setup, and basic SEO to launch a fully functional online store.",
         },
         {
-            question: "How much does it cost to create an online store?",
-            answer: "The cost depends on the complexity of the design and functionality. In general, online store development starts from $2000. This includes design, layout, form integration, and deployment to the client's production server. Integrations, product filling and WordPress deployment are paid separately.",
+            question: "How much does an online store cost?",
+            answer: "Pricing depends on complexity and features. Projects typically start from $2000 and may increase based on integrations, custom functionality, and scale.",
         },
         {
-            question: "How long does it take to create an online store?",
-            answer: "The duration depends on the complexity of the project, but it usually takes 5–10 weeks.",
+            question: "How long does development take?",
+            answer: "On average, development takes 5–10 weeks depending on project scope and feedback speed.",
         },
         {
-            question: "Can I manage the store myself after launch?",
-            answer: "Yes. We set up WordPress CMS and WooCommerce so you can easily add products and update store information.",
+            question: "Can I manage the store myself?",
+            answer: "Yes, we provide a user-friendly admin panel so you can easily manage products, orders, and content.",
         },
         {
-            question: "What payment systems do you integrate?",
-            answer: "We work with popular systems such as WayForPay, LiqPay, Stripe, PayPal, Fondy and others upon request.",
+            question: "What payment systems can you integrate?",
+            answer: "We integrate popular payment systems such as Stripe, PayPal, LiqPay, Fondy, and others depending on your needs.",
         },
         {
-            question: "Is the online store mobile-friendly?",
-            answer: "Yes. All our projects are adapted for smartphones and tablets to ensure convenient shopping on mobile devices.",
-        },
-        {
-            question: "Can I add multilingual support to my store?",
-            answer: "Yes. We can implement an online store with support for multiple languages.",
+            question: "Can the store support multiple languages?",
+            answer: "Yes, we can build a multilingual store to help you reach a wider audience.",
         },
         {
             question: "Do you integrate analytics tools?",
-            answer: "Yes. We connect Google Analytics, Facebook Pixel and other analytics tools. You provide the tracking codes and we integrate them into the website.",
+            answer: "Yes, we connect tools like Google Analytics and Meta Pixel to track performance and user behavior.",
         },
         {
-            question: "Can I order a redesign of an existing store?",
-            answer: "Yes. We can redesign your existing store while preserving functionality and adding new features to improve conversions and user experience.",
-        },
-        {
-            question: "Do you provide post-launch support?",
-            answer: "Yes. We provide technical support and updates under a separate contract. This may include hourly work or a monthly support plan.",
-        },
-        {
-            question: "Where to start?",
-            answer: "First we need your input. Fill out the form on our website and provide information about your project, business goals, references, text content, logo, photos and other materials for the future store. If you do not have everything prepared, our manager will help you fill out a brief.",
+            question: "Do you provide support after launch?",
+            answer: "Yes, we offer ongoing support, updates, and maintenance as part of a separate support plan.",
         },
     ],
-    overview: 
-        {
-            title: "Developing an online store is an effective way to sell without any extra effort.",
-            subtitle: "Why is it necessary to order an online store?",
-            description: "Creating an online store has become not just a recommendation for those who sell goods, but rather a necessity! After all, most people no longer go to stores, fitting rooms, shopping centers. More than 1 million people annually save their time and nerves by making purchases online. It is cheaper, more convenient, faster, and overall more pleasant.",
-        },
-    
+    overview: {
+        title: "Online stores that drive sales and grow your business",
+        subtitle: "Why invest in an online store?",
+        description:
+            "eCommerce is the most effective way to reach more customers and increase revenue. We create online stores that combine great design, smooth user experience, and powerful functionality to maximize conversions and sales.",
+    },
 };

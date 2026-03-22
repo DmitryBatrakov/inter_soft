@@ -59,10 +59,24 @@ export type FirstStep = {
 
 }
 
+export type WorkflowStep = {
+    step: string;
+    title: string;
+    description: string;
+}
+
+export type WorkflowData = {
+    title: string;
+    tickerText: string;
+    description: string;
+    steps: WorkflowStep[];
+}
+
 export interface ProjectWorkItem {
     title: string;
     tickerText: string;
     description: string[];
     steps: ProjectWorkStep[];
     firstStep: FirstStep;
+    workflow: WorkflowData;
 }

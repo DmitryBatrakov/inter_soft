@@ -9,8 +9,8 @@ export default function Home() {
             <Hero />
 
             <WorkPrinciples numberSection={"01"} />
-
             <DigitalServices numberSection={"02"} />
+
             <Footer />
         </div>
     );
