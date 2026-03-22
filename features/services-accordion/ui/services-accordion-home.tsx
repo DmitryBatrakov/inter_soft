@@ -64,7 +64,7 @@ export function ServicesAccordionHome({
                                         >
                                             <Link
                                                 onClick={() =>
-                                                    setServicesOpen(false)
+                                                    setServicesOpen?.(false)
                                                 }
                                                 href={link.href}
                                                 className={cn(
