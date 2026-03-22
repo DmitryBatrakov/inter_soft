@@ -3,33 +3,32 @@ import { CardData } from "./type";
 export const cardData: CardData[] = [
     {
         title: "5",
-        subtitle: "Years",
-        description: "We are engaged in the development of digital products",
+        subtitle: "Years of experience",
+        description: "Building digital products and software solutions",
     },
-
     {
-        title: "80",
+        title: "60",
         subtitle: "Clients",
-        description: "Number of clients who are satisfied with our work",
+        description: "Trusted by companies across different industries",
     },
     {
-        title: "150",
+        title: "72",
         subtitle: "Projects delivered",
-        description: "From landing pages to complex platforms",
+        description: "From simple websites to complex platforms",
     },
     {
         title: "77",
-        subtitle: "percent of clients",
-        description: "Most of our clients come back for new products",
+        subtitle: "Percent client retention",
+        description: "Long-term partnerships and repeat collaborations",
     },
     {
         title: "13",
-        subtitle: "members",
-        description: "Working on the team in company and outsourcing",
+        subtitle: "Team members",
+        description: "In-house and distributed experts",
     },
     {
-        title: "11",
-        subtitle: "countries",
-        description: "Geography of service provision around the world",
+        title: "7",
+        subtitle: "Countries",
+        description: "Serving clients worldwide",
     },
 ];

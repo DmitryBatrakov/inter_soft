@@ -4,65 +4,51 @@ export const businessCardData: ServicePageData = {
     slug: "business-card-site",
     hero: {
         titlePrefix: "Creating",
-        title: "Of Business Card Sites",
+        title: "Business Card Websites",
         benefits: [
-            "A business card to represent your business",
-            "A reliable solution without templates and constructors",
-            "A minimalistic and convenient site for effective representation",
+            "Professional online presence for your business",
+            "Fully custom solution — no templates or builders",
+            "Minimalistic design focused on clarity and conversions",
         ],
     },
     faq: [
         {
             question: "What is a business card website?",
-            answer: "A business card website is a small website that contains key information about a company, its services, and contact details. It helps clients quickly learn about your brand and offerings.",
+            answer: "A business card website is a compact site that presents key information about your company, services, and contacts, helping clients quickly understand your offer.",
         },
         {
-            question:
-                "How can I independently change the information on the site?",
-            answer: "We provide an administrative panel where you can edit text, images, and other content on your website without technical knowledge.",
+            question: "Can I update the website content myself?",
+            answer: "Yes, we provide an admin panel where you can easily edit text, images, and other content without technical knowledge.",
         },
         {
-            question: "How can I get a domain and hosting from you?",
-            answer: "We can assist with domain registration and set up hosting for your website to ensure it runs smoothly.",
+            question: "Do you provide domain and hosting?",
+            answer: "Yes, we can assist with domain registration and set up reliable hosting for your website.",
         },
         {
-            question: "How do you set up SEO for your business website?",
-            answer: "We include basic SEO optimization: configuring meta tags, improving page loading speed, and preparing the site for search engine indexing.",
+            question: "Do you include SEO optimization?",
+            answer: "We provide basic SEO setup, including meta tags, performance optimization, and preparation for search engine indexing.",
         },
         {
-            question: "Is it possible to add new sections or pages later?",
-            answer: "Yes, the website can be updated and expanded later according to your needs.",
+            question: "Can the website be expanded later?",
+            answer: "Yes, the website can be updated and scaled with new sections or features as your business grows.",
         },
         {
-            question: "Will the website be optimized for mobile devices?",
-            answer: "All of our websites are built with responsive design to ensure proper display on phones, tablets, and desktops.",
+            question: "Is the website mobile-friendly?",
+            answer: "All our websites are fully responsive and optimized for mobile, tablet, and desktop devices.",
         },
         {
-            question:
-                "What functionality does a business card website include?",
-            answer: "Typical functionality may include a header, company information, services section, gallery, contact form, map, and contact buttons.",
+            question: "How much does a business card website cost?",
+            answer: "Pricing depends on design and functionality. Projects typically start from $900 and may vary based on additional features and integrations.",
         },
         {
-            question:
-                "How much does it cost to create a business card website?",
-            answer: "The price depends on the complexity of design and functionality. Landing page projects start from $900 and include design, layout, form integration, and deployment. Additional integrations are priced separately.",
-        },
-        {
-            question: "What is needed to start developing a website?",
-            answer: "To begin, we need information about your company, text content, logo, photos, and design references if available.",
-        },
-        {
-            question:
-                "How long does it take to develop a business card website?",
-            answer: "The development process typically takes 7–14 business days depending on the complexity of the design and feedback from the client.",
+            question: "How long does development take?",
+            answer: "On average, development takes 7–14 business days, depending on complexity and feedback speed.",
         },
     ],
-    overview: [
-        {
-            title: "Business cardsdevelopment is an effective way to increase conversions and sales",
-            subtitle: "Creation of business cards for the site",
-            description:
-                "When starting a business, it is necessary to immediately pour large budgets into the creation of the site. It would be much more efficient to create a small, but informative site. For example, put",
-        },
-    ],
+    overview: {
+        title: "Business card websites that build trust and generate leads",
+        subtitle: "Why choose a business card website?",
+        description:
+            "A business card website is a smart and cost-effective way to launch your online presence. It helps you showcase your services, build trust with clients, and start generating leads without unnecessary complexity.",
+    },
 };

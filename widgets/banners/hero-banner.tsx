@@ -30,7 +30,7 @@ export const HeroBanner = ({
             <div className="max-w-3xl mx-auto text-center z-10 flex flex-col items-center justify-center">
                 {icon && <div className="mb-4 flex justify-center">{icon}</div>}
 
-                <h2 className="text-xl md:text-3xl font-semibold text-accent text-center">{title}</h2>
+                <h2 className="text-xl md:text-3xl font-extraight text-accent text-center">{title}</h2>
 
                 {subtitle && (
                     <p className="text-accent">{subtitle}</p>

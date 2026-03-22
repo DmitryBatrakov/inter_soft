@@ -24,8 +24,35 @@ export const items: ServiceItem[] = [
         ],
         image: "/assets/images/accordion/web.png",
     },
+
     {
         id: "02",
+        title: "Apps",
+        links: [
+            {
+                label: "Creating Web Applications",
+                href: "/services/web-applications",
+            },
+            {
+                label: "Creating Of Mobile Applications",
+                href: "/services/mobile-applications",
+            },
+        ],
+        image: "/assets/images/accordion/web.png",
+    },
+    {
+        id: "03",
+        title: "Integrations",
+        links: [
+            {
+                label: "Integrations Of Sites With CRM\nPayment and Services\nMessengers",
+                href: "/services/integrations-of-sites-with-crm-payment-services-messengers",
+            },
+        ],
+        image: "/assets/images/accordion/web.png",
+    },
+    {
+        id: "04",
         title: "Design",
         links: [
             {
@@ -43,32 +70,6 @@ export const items: ServiceItem[] = [
             {
                 label: "Design of logo and brandbooks",
                 href: "/services/logo-and-brandbooks",
-            },
-        ],
-        image: "/assets/images/accordion/web.png",
-    },
-    {
-        id: "03",
-        title: "Apps",
-        links: [
-            {
-                label: "Creating Web Applications",
-                href: "/services/web-applications",
-            },
-            {
-                label: "Creating Of Mobile Applications",
-                href: "/services/mobile-applications",
-            },
-        ],
-        image: "/assets/images/accordion/web.png",
-    },
-    {
-        id: "04",
-        title: "Integrations",
-        links: [
-            {
-                label: "Integrations Of Sites With CRM\nPayment and Services\nMessengers",
-                href: "/services/integrations-of-sites-with-crm-payment-services-messengers",
             },
         ],
         image: "/assets/images/accordion/web.png",
@@ -93,5 +94,3 @@ export const items: ServiceItem[] = [
         image: "/assets/images/accordion/web.png",
     },
 ];
-
-
