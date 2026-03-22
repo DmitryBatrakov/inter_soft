@@ -11,7 +11,7 @@ import { Link } from "@/i18n/navigation";
 export function ServicesAccordionHome({
     setServicesOpen,
 }: {
-    setServicesOpen: (open: boolean) => void;
+    setServicesOpen?: (open: boolean) => void;
 }) {
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
