@@ -2,6 +2,7 @@ import { DigitalServices } from "@/widgets/services/ui/DigitalServices";
 import { Hero } from "@/widgets/hero/Hero";
 import { WorkPrinciples } from "@/widgets/work-principles/WorkPrinciples";
 import { Footer } from "@/widgets/footer/Footer";
+import { Industries } from "@/widgets/industries/Industries";
 
 export default function Home() {
     return (
@@ -9,7 +10,8 @@ export default function Home() {
             <Hero />
 
             <WorkPrinciples numberSection={"01"} />
-            <DigitalServices numberSection={"02"} />
+            <Industries numberSection={"02"}/>
+            {/* <DigitalServices numberSection={"02"} /> */}
 
             <Footer />
         </div>

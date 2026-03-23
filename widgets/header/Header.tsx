@@ -51,7 +51,12 @@ export const Header = () => {
                 className="relative mx-auto hidden w-full max-w-7xl items-center justify-between md:flex"
                 onMouseLeave={closeServices}
             >
-                <Link href="/" className="text-2xl hover:scale-95 transition-scale duration-300 ease-in-out">Inter SOFT</Link>
+                <Link
+                    href="/"
+                    className="text-2xl hover:scale-95 transition-scale duration-300 ease-in-out"
+                >
+                    Inter SOFT
+                </Link>
 
                 <ul className="flex items-center md:gap-8 lg:gap-10 text-sm">
                     <li className="hover:text-primary transition-all duration-300 ease-in-out">
@@ -66,11 +71,16 @@ export const Header = () => {
                     >
                         <button
                             type="button"
-                            className="hover:text-primary transition-all duration-300"
+                            className="flex gap-2 items-center justify-center w-full"
                             aria-expanded={servicesOpen}
                             onClick={() => router.push("/services")}
                         >
-                            Services
+                            <span className={cn(" transition-color duration-300", servicesOpen ? "text-primary" : "")}>
+                                Services
+                            </span>
+                            <span className={cn(" transition-transform duration-300", servicesOpen ? "text-primary rotate-180" : "")}>
+                                <ChevronDown className="w-3 h-3" />
+                            </span>
                         </button>
                     </li>
 
@@ -79,7 +89,6 @@ export const Header = () => {
                     </li>
                 </ul>
                 <div className="flex items-center justify-between gap-2">
-                    {/* <ThemeToggle /> */}
                     <Button className="bg-transparent text-foreground hover:bg-accent">
                         en <ChevronDown className="w-4 h-4" />
                     </Button>
@@ -96,7 +105,9 @@ export const Header = () => {
                     ].join(" ")}
                 >
                     <div className="rounded-2xl w-full h-full border bg-background p-4 shadow-xl mt-3">
-                        <ServicesAccordionHome setServicesOpen={setServicesOpen} />
+                        <ServicesAccordionHome
+                            setServicesOpen={setServicesOpen}
+                        />
                     </div>
                 </div>
             </nav>
@@ -110,10 +121,17 @@ export const Header = () => {
                         <DrawerTrigger>
                             <HiOutlineMenu className="w-6 h-6" />
                         </DrawerTrigger>
-                        <DrawerContent className="min-h-screen drawer-slow" id="mobile-menu-drawer">
+                        <DrawerContent
+                            className="min-h-screen drawer-slow"
+                            id="mobile-menu-drawer"
+                        >
                             <DrawerHeader>
                                 <DrawerTitle>Menu</DrawerTitle>
                             </DrawerHeader>
+                            <div className="p-4 flex flex-col gap-4">
+                                <h1>Navigation</h1>
+                                <ServicesAccordionHome />
+                            </div>
                             <DrawerFooter>
                                 <DrawerClose asChild>
                                     <AnimatedButton>Close</AnimatedButton>
