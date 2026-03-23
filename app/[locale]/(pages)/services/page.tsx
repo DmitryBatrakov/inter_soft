@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { items } from "@/entities/service/data/service-accordion-items";
+import { items } from "@/entities/service/data/accordions/service-accordion-items";
 import { cn } from "@/lib/utils";
 import { OutlinedText } from "@/shared/outlined-text/outlined-text";
 import { SpinningFigure } from "@/shared/spinning-fidure/spinning-figure";
