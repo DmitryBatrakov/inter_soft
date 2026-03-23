@@ -12,7 +12,7 @@ export const Hero = () => {
                     <p className="font-heading text-[0.9rem] lg:text-[1.3rem]">
                         {heroMainData.sectionLabel}
                     </p>
-                    <h1 className="text-[1.9rem] md:text-[3.2rem] lg:text-[5rem] uppercase leading-none">
+                    <h1 className="text-[1.9rem] md:text-[3.2rem] lg:text-[4.3rem] uppercase leading-none">
                         {heroMainData.heading.lineOne}
                         <br />
                         <span className="inline-block border-3 border-primary rounded-md px-1 md:px-2">

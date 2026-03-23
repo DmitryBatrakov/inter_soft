@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { FaqItem as FaqItemType } from "@/entities/service/model/types";
-import FaqList from "@/shared/faq-item/FaqItem";
+import FaqList from "@/features/service-faq/ui/FaqItem";
 
 export const FaqServices = ({
     data,

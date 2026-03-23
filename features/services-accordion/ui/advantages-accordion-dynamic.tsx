@@ -1,6 +1,6 @@
 "use client";
 
-import { advantageAccordionItems } from "@/entities/service/data/advantages-accodion-item";
+import { advantageAccordionItems } from "@/entities/service/data/accordions/advantages-accodion-item";
 import { cn } from "@/lib/utils";
 import { OutlinedText } from "@/shared/outlined-text/outlined-text";
 import { useState } from "react";
@@ -61,7 +61,7 @@ export const AdvantagesAccordion = () => {
                                 </span>
                             </div>
 
-                            {/* <span
+                            <span
                                 className={cn(
                                     "text-[2.1rem] font-bold text-primary transition-transform duration-700 ease-in-out p-2 justify-end",
                                     active
@@ -70,7 +70,7 @@ export const AdvantagesAccordion = () => {
                                 )}
                             >
                                 {item.id}
-                            </span> */}
+                            </span>
                         </div>
                         <div
                             className={cn(
