@@ -51,4 +51,42 @@ export const onlineStoreData: ServicePageData = {
         description:
             "eCommerce is the most effective way to reach more customers and increase revenue. We create online stores that combine great design, smooth user experience, and powerful functionality to maximize conversions and sales.",
     },
+    proccess: {
+        title: "Work process",
+        description:
+            "We follow a clear and transparent workflow so you always understand each stage of our collaboration.",
+        steps: [
+            {
+                step: "01",
+                title: "Discovery",
+                description: "Understanding business model and user flow",
+            },
+            {
+                step: "02",
+                title: "Design",
+                description:
+                    "Creating a conversion-focused shopping experience",
+            },
+            {
+                step: "03",
+                title: "Development",
+                description: "Building fast and scalable online stores",
+            },
+            {
+                step: "04",
+                title: "Integrations",
+                description: "Payments, CRM, delivery, and analytics setup",
+            },
+            {
+                step: "05",
+                title: "Testing",
+                description: "Ensuring smooth checkout and performance",
+            },
+            {
+                step: "06",
+                title: "Launch",
+                description: "Going live and monitoring key metrics",
+            },
+        ],
+    },
 };
