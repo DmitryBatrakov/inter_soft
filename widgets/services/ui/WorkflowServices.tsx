@@ -1,17 +1,18 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator";
-import { dataWorkProcess } from "@/entities/service/data/common";
+import { ProccessData } from "@/entities/service/model/types";
 import { cn } from "@/lib/utils";
 import { OutlinedText } from "@/shared/outlined-text/outlined-text";
 import { useEffect, useRef, useState } from "react";
 
 type WorkflowServicesProps = {
     numberSection: string;
+    proccess: ProccessData;
 };
 
-export const WorkflowServices = ({ numberSection }: WorkflowServicesProps) => {
-    const workflow = dataWorkProcess.workflow;
+export const WorkflowServices = ({ numberSection, proccess }: WorkflowServicesProps) => {
+    const workflow = proccess;
     const stepsCount = workflow.steps.length;
 
     const itemRefs = useRef<(HTMLElement | null)[]>([]);

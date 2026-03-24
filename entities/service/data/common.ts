@@ -61,48 +61,4 @@ export const dataWorkProcess: ProjectWorkItem = {
             { text: " GET BACK TO YOU.", variant: "default" },
         ],
     },
-    workflow: {
-        title: "Workflow",
-        tickerText: "Implementation flow",
-        description:
-            "We move from discovery to release through a structured sequence of steps, keeping each stage visible and aligned with your goals.",
-        steps: [
-            {
-                step: "01",
-                title: "Discovery & requirements",
-                description:
-                    "We analyze your project, goals, and input data to define clear requirements and the right development approach.",
-            },
-            {
-                step: "02",
-                title: "Prototype & design",
-                description:
-                    "We create a structured prototype and design a clean, user-focused interface aligned with your brand.",
-            },
-            {
-                step: "03",
-                title: "Development",
-                description:
-                    "We build a responsive product with interactive elements, ensuring performance and scalability.",
-            },
-            {
-                step: "04",
-                title: "CMS & implementation",
-                description:
-                    "We integrate the product with a CMS, configure navigation, and ensure easy content management.",
-            },
-            {
-                step: "05",
-                title: "Integrations",
-                description:
-                    "We connect CRM, analytics, forms, and third-party services to support your business processes.",
-            },
-            {
-                step: "06",
-                title: "Testing & launch",
-                description:
-                    "We test across devices and environments, then deploy the product to production, ready for users.",
-            },
-        ],
-    },
 };
