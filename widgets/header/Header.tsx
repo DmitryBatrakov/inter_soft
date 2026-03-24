@@ -37,7 +37,7 @@ export const Header = () => {
     };
 
     const closeServices = () => {
-        closeTimer.current = setTimeout(() => setServicesOpen(false), 500);
+        closeTimer.current = setTimeout(() => setServicesOpen(false), 200);
     };
 
     return (
@@ -63,29 +63,39 @@ export const Header = () => {
                         <Link href="/contact">Contacts</Link>
                     </li>
 
-                    <li
-                        className="relative"
-                        onMouseEnter={openServices}
-                        onFocus={openServices}
-                        onClick={() => setServicesOpen(false)}
-                    >
+                    <li className="relative">
                         <button
                             type="button"
-                            className="flex gap-2 items-center justify-center w-full"
+                            className="flex gap-2 items-center justify-center w-full cursor-pointer"
                             aria-expanded={servicesOpen}
-                            onClick={() => router.push("/services")}
+                            onClick={() => setServicesOpen(false)}
+                            onMouseEnter={openServices}
+                            onFocus={openServices}
                         >
-                            <span className={cn(" transition-color duration-300", servicesOpen ? "text-primary" : "")}>
+                            <span
+                                className={cn(
+                                    " transition-color duration-300",
+                                    servicesOpen ? "text-primary" : "",
+                                )}
+                                onClick={() => router.push("/services")}
+                            >
                                 Services
                             </span>
-                            <span className={cn(" transition-transform duration-300", servicesOpen ? "text-primary rotate-180" : "")}>
+                            <span
+                                className={cn(
+                                    " transition-transform duration-300",
+                                    servicesOpen
+                                        ? "text-primary rotate-180"
+                                        : "",
+                                )}
+                            >
                                 <ChevronDown className="w-3 h-3" />
                             </span>
                         </button>
                     </li>
 
                     <li className="hover:text-primary transition-all duration-300 ease-in-out">
-                        <Link href="/">Blog</Link>
+                        <Link href="/about">About</Link>
                     </li>
                 </ul>
                 <div className="flex items-center justify-between gap-2">
