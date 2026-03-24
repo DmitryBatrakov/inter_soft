@@ -19,7 +19,7 @@ export default async function DynamicServicesPage({params}: {params: Promise<{se
         <div className="w-full min-h-screen mx-auto flex flex-col items-center justify-center relative overflow-x-clip">
             <HeroServices data={data.hero}/>
             <ProjectWorkServices numberSection={"01"} />
-            <WorkflowServices numberSection={"02"} />
+            <WorkflowServices numberSection={"02"} proccess={data.proccess} />
             <AdvantagesServices numberSection={"03"} />
             <FaqServices data={data.faq} numberSection={"04"}/>
             <FirstStepServices numberSection={"05"} />

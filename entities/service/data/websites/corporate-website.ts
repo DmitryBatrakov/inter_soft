@@ -47,4 +47,37 @@ export const corporateWebsiteData: ServicePageData = {
         description:
             "A corporate website is more than just an online presence — it’s a powerful tool for building trust, presenting your company at a professional level, and supporting long-term growth. We create structured, scalable websites that reflect your brand, communicate your value, and help you attract clients and partners.",
     },
+    proccess: {
+        title: "Work process",
+        description:
+            "We follow a clear and transparent workflow so you always understand each stage of our collaboration.",
+        steps: [
+            {
+                step: "01",
+                title: "Discovery",
+                description: "Defining business goals and content structure",
+            },
+            {
+                step: "02",
+                title: "Design",
+                description:
+                    "Creating a clean and professional brand experience",
+            },
+            {
+                step: "03",
+                title: "Development",
+                description: "Building scalable and responsive web pages",
+            },
+            {
+                step: "04",
+                title: "CMS Setup",
+                description: "Implementing content management for easy updates",
+            },
+            {
+                step: "05",
+                title: "Launch",
+                description: "Final testing and deployment",
+            },
+        ],
+    },
 };
