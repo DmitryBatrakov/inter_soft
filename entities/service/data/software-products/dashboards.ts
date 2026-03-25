@@ -1,6 +1,5 @@
-import { ServicePageData } from "../../model/web-solutions/types";
 
-export const dashboardsData: ServicePageData = {
+export const dashboardsData = {
     slug: "dashboards",
 
     hero: {

@@ -1,6 +1,6 @@
-import { ServicePageData } from "../../model/web-solutions/types";
+import { WebSolutionsPageData } from "../../model/web-solutions/types";
 
-export const corporateWebsiteData: ServicePageData = {
+export const corporateWebsiteData: WebSolutionsPageData = {
     slug: "corporate-website",
     hero: {
         titlePrefix: "Creating",

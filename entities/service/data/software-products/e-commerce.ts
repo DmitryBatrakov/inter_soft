@@ -1,6 +1,5 @@
-import { ServicePageData } from "../../model/web-solutions/types";
 
-export const eCommerceData: ServicePageData = {
+export const eCommerceData = {
     slug: "e-commerce",
     hero: {
         titlePrefix: "Creating",
