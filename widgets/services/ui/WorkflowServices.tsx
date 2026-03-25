@@ -1,7 +1,7 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator";
-import { ProccessData } from "@/entities/service/model/types";
+import { ProccessData } from "@/entities/service/model/web-solutions/types";
 import { cn } from "@/lib/utils";
 import { OutlinedText } from "@/shared/outlined-text/outlined-text";
 import { useEffect, useRef, useState } from "react";
@@ -11,7 +11,10 @@ type WorkflowServicesProps = {
     proccess: ProccessData;
 };
 
-export const WorkflowServices = ({ numberSection, proccess }: WorkflowServicesProps) => {
+export const WorkflowServices = ({
+    numberSection,
+    proccess,
+}: WorkflowServicesProps) => {
     const workflow = proccess;
     const stepsCount = workflow.steps.length;
 
@@ -94,7 +97,7 @@ export const WorkflowServices = ({ numberSection, proccess }: WorkflowServicesPr
                 </p>
 
                 <div className="relative mt-8 md:mt-12">
-                    <div className="pointer-events-none absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-accent/30 md:block"/>
+                    <div className="pointer-events-none absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-accent/30 md:block" />
                     <div
                         className="pointer-events-none absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-primary transition-transform duration-300 ease-out md:block"
                         style={{
@@ -103,28 +106,28 @@ export const WorkflowServices = ({ numberSection, proccess }: WorkflowServicesPr
                         }}
                     />
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <div className="flex flex-col gap-4 md:gap-0">
                         {workflow.steps.map((item, index) => {
-                           const isActive = index <= lastActiveIndex;
-                           
+                            const isActive = index <= lastActiveIndex;
+                            const isEven = index % 2 === 0;
+
                             return (
                                 <article
                                     key={item.step}
-                                    data-index={index}
                                     ref={(el) => {
                                         itemRefs.current[index] = el;
                                     }}
                                     className={cn(
-                                        "relative rounded-md border p-4 md:p-5 min-h-[220px] flex flex-col gap-4 transition-all duration-700",
-                                        index % 2 === 0
-                                            ? "md:mr-4 lg:mr-8 md:mb-30"
-                                            : "md:ml-4 lg:ml-8 md:mt-30",
+                                        "relative rounded-xl border p-4 md:p-5 flex flex-col  transition-all duration-700 md:w-[45%] my-2",
+                                        isEven
+                                            ? "md:self-start"
+                                            : "md:self-end",
                                         isActive
                                             ? "border-primary/60 bg-foreground/10 opacity-100"
                                             : "border-muted/40 bg-muted/10 opacity-55 grayscale",
                                     )}
                                 >
-                                    <div className="w-full flex flex-col items-start justify-between gap-5">
+                                    <div className="w-full flex flex-col items-start justify-between gap-3 mb-1">
                                         <OutlinedText
                                             strokeColor="gray"
                                             fillColor="transparent"

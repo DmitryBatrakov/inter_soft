@@ -1,6 +1,6 @@
 import { HeroBanner } from "@/widgets/banners/hero-banner";
 import { SpinningFigure } from "@/shared/spinning-fidure/spinning-figure";
-import { heroMainData } from "@/entities/service/data/hero-main";
+import { heroMainData } from "@/entities/service/data/main-page/hero-main";
 import Link from "next/link";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 

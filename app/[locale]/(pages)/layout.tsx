@@ -10,9 +10,9 @@ export default function PagesLayout({
 }) {
     return (
         <div className="">
-            {/* <div>
+            <div className="max-w-7xl mx-auto hidden md:block relative">
                 <AppBreadcrumb />
-            </div> */}
+            </div>
             <div>{children}</div>
             <Footer />
         </div>

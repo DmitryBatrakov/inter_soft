@@ -1,4 +1,4 @@
-import { ServicePageData } from "../../model/types";
+import { ServicePageData } from "../../model/web-solutions/types";
 
 export const landingPageData: ServicePageData = {
     slug: "landing-page",
@@ -53,28 +53,31 @@ export const landingPageData: ServicePageData = {
     },
     proccess: {
         title: "Work process",
-        description: "We follow a clear and transparent workflow so you always understand each stage of our collaboration.",
+        description:
+            "We follow a clear and transparent workflow so you always understand each stage of our collaboration.",
         steps: [
-
-        {
-            step: "01",
-            title: "Discovery",
-            description: "Understanding your goals, audience, and key message",
-        },
-        {
-            step: "02",
-            title: "Structure & Design",
-            description: "Creating a clear layout and converting user flow",
-        },
-        {
-            step: "03",
-            title: "Development",
-            description: "Building a fast, responsive, and SEO-friendly page",
-        },
-        {
-            step: "04",
-            title: "Launch",
-            description: "Testing and publishing your landing page",
-        },
-    ]},
+            {
+                step: "01",
+                title: "Discovery",
+                description:
+                    "Understanding your goals, audience, and key message",
+            },
+            {
+                step: "02",
+                title: "Structure & Design",
+                description:
+                    "Creating a clear layout and conversion-focused design",
+            },
+            {
+                step: "03",
+                title: "Development",
+                description: "Building a fast and responsive landing page",
+            },
+            {
+                step: "04",
+                title: "Launch",
+                description: "Testing and publishing your page",
+            },
+        ],
+    },
 };

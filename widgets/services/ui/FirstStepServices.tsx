@@ -1,4 +1,4 @@
-import { dataWorkProcess } from "@/entities/service/data/common";
+import { dataWorkProcess } from "@/entities/service/data/main-page/common";
 import { AnimatedButton } from "@/shared/amimated-button/animated-button";
 import { OutlinedText } from "@/shared/outlined-text/outlined-text";
 import { SpinningFigure } from "@/shared/spinning-fidure/spinning-figure";

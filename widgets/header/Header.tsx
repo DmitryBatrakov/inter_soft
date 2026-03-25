@@ -43,7 +43,7 @@ export const Header = () => {
     return (
         <header
             className={cn(
-                "flex justify-center items-center py-5 px-4 w-full fixed top-0 left-0 right-0 z-20 bg-background transition-all duration-400 ease-in-out delay-100",
+                "flex justify-center items-center py-5 px-4 w-full fixed top-0 left-0 right-0 z-30 bg-background transition-all duration-400 ease-in-out delay-100",
                 direction === "down" ? " -translate-y-full" : "translate-y-0",
             )}
         >
@@ -114,7 +114,7 @@ export const Header = () => {
                             : "opacity-0 -translate-y-2 pointer-events-none",
                     ].join(" ")}
                 >
-                    <div className="rounded-2xl w-full h-full border bg-background p-4 shadow-xl mt-3">
+                    <div className="rounded-2xl w-full h-full  bg-background p-1 shadow-xl mt-3">
                         <ServicesAccordionHome
                             setServicesOpen={setServicesOpen}
                         />
