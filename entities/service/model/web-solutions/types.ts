@@ -27,7 +27,7 @@ export type ProccessData = {
     steps: ProccessItem[];
 };
 
-export interface ServicePageData {
+export interface WebSolutionsPageData {
     slug: string;
     hero: HeroData;
     faq: FaqItem[];

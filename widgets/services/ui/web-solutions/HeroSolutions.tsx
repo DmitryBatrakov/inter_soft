@@ -4,7 +4,7 @@ import { SpinningFigure } from "@/shared/spinning-fidure/spinning-figure";
 import { BsCheckLg } from "react-icons/bs";
 
 
-export const HeroServices = ({ data }: { data: HeroData }) => {
+export const HeroSolutions = ({ data }: { data: HeroData }) => {
     return (
         <section className="w-full flex flex-col items-center justify-center min-h-screen overflow-x-clip relative mt-10 bg-background z-10">
             <div className="max-w-7xl w-full relative flex flex-col gap-10 items-center justify-start z-10 p-4 mb-20 md:mb-0">

@@ -17,7 +17,7 @@ export const AppBreadcrumb = () => {
                 {breadcrumbs.map((crumb, i) => (
                     <React.Fragment key={crumb.href}>
                         <BreadcrumbItem>
-                            <BreadcrumbLink href={crumb.href} className="font-inter font-medium hover:text-primary text-[0.9rem]">
+                            <BreadcrumbLink href={crumb.href} className="font-inter font-medium hover:text-primary text-[0.7rem]">
                                 {crumb.label}
                             </BreadcrumbLink>
                         </BreadcrumbItem>
