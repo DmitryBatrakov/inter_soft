@@ -1,4 +1,3 @@
-import { getServicePageData } from "@/entities/service/lib/getServicePageData";
 import { AdvantagesServices } from "@/widgets/services/ui/AdvantagesServices";
 import { FaqServices } from "@/widgets/services/ui/FaqServices";
 import { HeroServices } from "@/widgets/services/ui/HeroServices";
@@ -7,11 +6,12 @@ import { FirstStepServices } from "@/widgets/services/ui/FirstStepServices";
 import { notFound } from "next/navigation";
 import { OverviewServices } from "@/widgets/services/ui/OverviewServices";
 import { WorkflowServices } from "@/widgets/services/ui/WorkflowServices";
+import { getWebSolutionsPageData } from "@/entities/service/lib/getServicePageData";
 
-export default async function DynamicServicesPage({params}: {params: Promise<{service: string}>}) {
+export default async function DynamicWebSolutionsPage({params}: {params: Promise<{service: string}>}) {
 
     const {service} = await params;
-    const data = getServicePageData(service);
+    const data = getWebSolutionsPageData(service);
 
     if(!data) notFound();
 

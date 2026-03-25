@@ -1,4 +1,4 @@
-import { ServicePageData } from "../../model/types";
+import { ServicePageData } from "../../model/web-solutions/types";
 
 export const corporateWebsiteData: ServicePageData = {
     slug: "corporate-website",
@@ -66,12 +66,12 @@ export const corporateWebsiteData: ServicePageData = {
             {
                 step: "03",
                 title: "Development",
-                description: "Building scalable and responsive web pages",
+                description: "Building scalable and responsive pages",
             },
             {
                 step: "04",
                 title: "CMS Setup",
-                description: "Implementing content management for easy updates",
+                description: "Implementing easy content management",
             },
             {
                 step: "05",

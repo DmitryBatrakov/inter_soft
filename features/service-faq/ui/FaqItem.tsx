@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FaqItem as FaqItemType } from "@/entities/service/model/types";
+import { FaqItem as FaqItemType } from "@/entities/service/model/web-solutions/types";
 
 interface FaqItemProps {
     question: string;

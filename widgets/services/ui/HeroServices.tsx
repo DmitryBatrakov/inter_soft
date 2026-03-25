@@ -1,4 +1,4 @@
-import { HeroData } from "@/entities/service/model/types";
+import { HeroData } from "@/entities/service/model/web-solutions/types";
 import { AnimatedButton } from "@/shared/amimated-button/animated-button";
 import { SpinningFigure } from "@/shared/spinning-fidure/spinning-figure";
 import { BsCheckLg } from "react-icons/bs";

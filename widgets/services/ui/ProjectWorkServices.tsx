@@ -2,7 +2,7 @@
 
 import { Separator } from "@/components/ui/separator";
 import { Ticker } from "@/shared/ticker/Ticker";
-import { dataWorkProcess } from "@/entities/service/data/common";
+import { dataWorkProcess } from "@/entities/service/data/main-page/common";
 
 export const ProjectWorkServices = ({
     numberSection,

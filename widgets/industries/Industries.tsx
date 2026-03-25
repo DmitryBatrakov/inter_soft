@@ -126,7 +126,7 @@ export const Industries = ({ numberSection }: { numberSection: string }) => {
                             The next project can be your. Let`s talk and find
                             out how we can help you grow!
                         </p>
-                        <AnimatedButton className="bg-background text-white px-8 py-4 text-[1.5rem] hover:bg-background/90 transition-all duration-300 ease-in-out rounded-xl">
+                        <AnimatedButton className=" text-white px-8 py-4 text-[1.5rem]">
                             Contact sales
                         </AnimatedButton>
                     </div>

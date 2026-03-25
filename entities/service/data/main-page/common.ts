@@ -1,4 +1,4 @@
-import { ProjectWorkItem } from "../model/types";
+import { ProjectWorkItem } from "../../model/workflow/types";
 
 export const dataWorkProcess: ProjectWorkItem = {
     title: "How We Bring Your Project to Life",
