@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { OverviewService } from "@/entities/service/model/types";
+import { OverviewService } from "@/entities/service/model/web-solutions/types";
 import { IoArrowDownSharp } from "react-icons/io5";
 
 type OverviewServicesProps = {
