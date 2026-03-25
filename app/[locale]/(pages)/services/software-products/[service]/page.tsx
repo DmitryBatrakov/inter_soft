@@ -1,5 +1,7 @@
 import { getSoftwareProductsPageData } from "@/entities/service/lib/getServicePageData";
+import { FaqServices } from "@/widgets/services/ui/FaqServices";
 import { ProjectWorkServices } from "@/widgets/services/ui/ProjectWorkServices";
+import { TechnologiesServices } from "@/widgets/services/ui/TechnologiesServices";
 import { HeroSoftware } from "@/widgets/services/ui/software/HeroSoftware";
 import { OverviewSoftware } from "@/widgets/services/ui/software/OverviewSoftware";
 import { notFound } from "next/navigation";
@@ -19,6 +21,8 @@ export default async function SoftwareProductsPage({
             <HeroSoftware data={data.hero} />
             <OverviewSoftware data={data.overview} numberSection={"01"} />
             <ProjectWorkServices numberSection={"02"} />
+            <TechnologiesServices numberSection={"03"} />
+            <FaqServices data={data.faq.items} numberSection={"04"} />
 
         </div>
     );

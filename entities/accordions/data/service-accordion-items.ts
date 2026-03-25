@@ -1,4 +1,4 @@
-import { ServiceItem } from "../../model/accordion/types";
+import { ServiceItem } from "../model/types";
 
 export const items: ServiceItem[] = [
     {

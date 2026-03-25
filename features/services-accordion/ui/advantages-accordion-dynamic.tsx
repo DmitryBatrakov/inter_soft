@@ -1,6 +1,6 @@
 "use client";
 
-import { advantageAccordionItems } from "@/entities/service/data/accordions/advantages-accodion-item";
+import { advantageAccordionItems } from "@/entities/accordions/data/advantages-accodion-item";
 import { cn } from "@/lib/utils";
 import { OutlinedText } from "@/shared/outlined-text/outlined-text";
 import { useState } from "react";

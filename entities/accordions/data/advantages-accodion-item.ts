@@ -1,4 +1,4 @@
-import { AdvantagesAccordionItem } from "../../model/accordion/types";
+import { AdvantagesAccordionItem } from "../model/types";
 
 
 export const advantageAccordionItems: AdvantagesAccordionItem[] = [
