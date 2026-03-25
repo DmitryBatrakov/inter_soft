@@ -1,6 +1,6 @@
-import { ServicePageData } from "../../model/types";
+import { WebSolutionsPageData } from "../../model/web-solutions/types";
 
-export const landingPageData: ServicePageData = {
+export const landingPageData: WebSolutionsPageData = {
     slug: "landing-page",
     hero: {
         titlePrefix: "Creating",
@@ -45,11 +45,39 @@ export const landingPageData: ServicePageData = {
             answer: "All our landing pages are fully responsive and optimized for mobile, tablet, and desktop devices.",
         },
     ],
-    overview: 
-    {
+    overview: {
         title: "Landing pages that drive conversions and increase sales",
         subtitle: "Why choose our landing pages?",
-        description: "A high-converting landing page helps you capture attention, build trust, and turn visitors into paying customers. We design every element to guide users toward action — whether it's a purchase, signup, or lead request.",
-    }
-      
+        description:
+            "A high-converting landing page helps you capture attention, build trust, and turn visitors into paying customers. We design every element to guide users toward action — whether it's a purchase, signup, or lead request.",
+    },
+    proccess: {
+        title: "Work process",
+        description:
+            "We follow a clear and transparent workflow so you always understand each stage of our collaboration.",
+        steps: [
+            {
+                step: "01",
+                title: "Discovery",
+                description:
+                    "Understanding your goals, audience, and key message",
+            },
+            {
+                step: "02",
+                title: "Structure & Design",
+                description:
+                    "Creating a clear layout and conversion-focused design",
+            },
+            {
+                step: "03",
+                title: "Development",
+                description: "Building a fast and responsive landing page",
+            },
+            {
+                step: "04",
+                title: "Launch",
+                description: "Testing and publishing your page",
+            },
+        ],
+    },
 };

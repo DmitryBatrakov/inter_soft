@@ -1,43 +1,26 @@
-import { ServiceItem } from "../../model/types";
-
+import { ServiceItem } from "../../model/accordion/types";
 
 export const items: ServiceItem[] = [
     {
         id: "01",
-        title: "Web Sites",
+        title: "Software Products",
         links: [
-            {
-                label: "Creating Landing Pages",
-                href: "/services/landing-page",
-            },
-            {
-                label: "Creation of Business Cards",
-                href: "/services/business-card",
-            },
-            {
-                label: "Creating Online Stores",
-                href: "/services/online-store",
-            },
-            {
-                label: "Creating Of Corporate Websites",
-                href: "/services/corporate-website",
-            },
+            { label: "SaaS Platforms", href: "/services/software-products/saas-platforms" },
+            { label: "Web Applications", href: "/services/software-products/web-applications" },
+            { label: "Mobile Applications", href: "/services/software-products/mobile-applications" },
         ],
         image: "/assets/images/accordion/web.png",
     },
-
     {
         id: "02",
-        title: "Apps",
+        title: "Web Solutions",
         links: [
+            { label: "Landing Pages", href: "/services/web-solutions/landing-page" },
             {
-                label: "Creating Web Applications",
-                href: "/services/web-applications",
+                label: "Corporate Websites",
+                href: "/services/web-solutions/corporate-website",
             },
-            {
-                label: "Creating Of Mobile Applications",
-                href: "/services/mobile-applications",
-            },
+            { label: "Web Portals", href: "/services/web-solutions/web-portals" },
         ],
         image: "/assets/images/accordion/web.png",
     },
@@ -45,52 +28,44 @@ export const items: ServiceItem[] = [
         id: "03",
         title: "Integrations",
         links: [
+            { label: "CRM Integrations", href: "/services/integrations/crm-integrations" },
             {
-                label: "Integrations Of Sites With CRM\nPayment and Services\nMessengers",
-                href: "/services/integrations-of-sites-with-crm-payment-services-messengers",
+                label: "Payment Integrations",
+                href: "/services/integrations/payment-integrations",
             },
+            {
+                label: "Third-Party Integrations",
+                href: "/services/integrations/third-party-integrations",
+            },
+            { label: "Messaging Systems", href: "/services/integrations/messaging-systems" },
         ],
         image: "/assets/images/accordion/web.png",
     },
     {
         id: "04",
-        title: "Design",
+        title: "Business Systems",
         links: [
+            { label: "Admin Panels", href: "/services/business-system/admin-panels" },
+            { label: "Internal Tools", href: "/services/business-system/internal-tools" },
+            { label: "Booking Systems", href: "/services/business-system/booking-systems" },
             {
-                label: "Web Desgin",
-                href: "/services/web-design",
-            },
-            {
-                label: "Banner design",
-                href: "/services/banner-design",
-            },
-            {
-                label: "Application design",
-                href: "/services/application-design",
-            },
-            {
-                label: "Design of logo and brandbooks",
-                href: "/services/logo-and-brandbooks",
+                label: "Workflow Automation",
+                href: "/services/business-system/workflow-automation",
             },
         ],
         image: "/assets/images/accordion/web.png",
     },
     {
         id: "05",
-        title: "Marketing",
+        title: "Product Design",
         links: [
+            { label: "UX/UI Design", href: "/services/design/ux-ui-design" },
+            { label: "Web Interface Design", href: "/services/design/web-design" },
             {
-                label: "SEO Optimization",
-                href: "/services/seo-optimization",
+                label: "Application Interface Design",
+                href: "/services/design/application-design",
             },
-            {
-                label: "SEM Advertising",
-                href: "/services/sem-advertising",
-            },
-            {
-                label: "SMM Advertising",
-                href: "/services/smm-advertising",
-            },
+            { label: "Design Systems", href: "/services/design/design-systems" },
         ],
         image: "/assets/images/accordion/web.png",
     },

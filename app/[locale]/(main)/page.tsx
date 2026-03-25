@@ -10,8 +10,8 @@ export default function Home() {
             <Hero />
 
             <WorkPrinciples numberSection={"01"} />
-            <Industries numberSection={"02"}/>
-            {/* <DigitalServices numberSection={"02"} /> */}
+            <DigitalServices numberSection={"02"} />
+            <Industries numberSection={"03"}/>
 
             <Footer />
         </div>

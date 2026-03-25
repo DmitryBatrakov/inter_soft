@@ -3,10 +3,12 @@
 import { Separator } from "@/components/ui/separator";
 import { industriesData } from "@/entities/industries/data/data";
 import { cn } from "@/lib/utils";
+import DotPattern from "@/shared/icons/DotPattern";
 import { MoveRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { PiArrowCircleRight } from "react-icons/pi";
+import { AnimatedButton } from "@/shared/amimated-button/animated-button";
 
 export const Industries = ({ numberSection }: { numberSection: string }) => {
     const [openIndexes, setOpenIndexes] = useState<number[]>([]);
@@ -22,8 +24,8 @@ export const Industries = ({ numberSection }: { numberSection: string }) => {
     };
 
     return (
-        <section className="w-full flex flex-col items-center justify-start bg-foreground relative z-10 px-4">
-            <Separator />
+        <section className="w-full flex flex-col items-center justify-start bg-foreground relative z-10 px-4 py-6 overflow-x-clip">
+            <Separator className="w-full bg-muted-foreground" />
             <div className="w-full flex items-center justify-between max-w-7xl mt-4">
                 <span className="uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] text-background">
                     Industries we work with
@@ -32,18 +34,8 @@ export const Industries = ({ numberSection }: { numberSection: string }) => {
                     {numberSection}
                 </span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between gap-5 w-full max-w-7xl py-10 md:py-20">
-                <div className="flex-1">
-                    <video
-                        src="https://res.cloudinary.com/dlonexnpg/video/upload/v1770056577/samples/elephants.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="w-full h-full object-cover"
-                    />
-                </div>
-                <div className="flex flex-col gap-5 justify-center items-end flex-1">
+            <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-5 md:gap-30 lg:gap-0 w-full max-w-7xl py-10 md:py-20 relative z-10">
+                <div className="flex flex-col gap-5 justify-center items-center lg:items-start flex-1">
                     {industriesItems.map((item, index) => {
                         const isOpen = openIndexes.includes(index);
 
@@ -55,7 +47,7 @@ export const Industries = ({ numberSection }: { numberSection: string }) => {
                             >
                                 <div
                                     className={cn(
-                                        "p-8 rounded-3xl bg-neutral-200 text-background flex flex-col  w-full max-w-md items-start justify-between hover:scale-97 transition-all duration-400 ease-in-out",
+                                        "p-8 rounded-3xl bg-neutral-200 text-background flex flex-col  w-full max-w-lg lg:max-w-md items-start justify-between hover:scale-97 transition-all duration-400 ease-in-out",
                                         isOpen ? "gap-6" : "gap-0",
                                     )}
                                 >
@@ -106,6 +98,38 @@ export const Industries = ({ numberSection }: { numberSection: string }) => {
                             </div>
                         );
                     })}
+                </div>
+                <div className="flex-1 relative">
+                    <video
+                        src="https://res.cloudinary.com/dlonexnpg/video/upload/v1770056577/samples/elephants.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover relative z-10"
+                    />
+                    <DotPattern
+                        className="absolute -right-20 -top-20 hidden md:block"
+                        size={400}
+                        dotRadius={3}
+                    />
+                    <DotPattern
+                        className="absolute -left-20 -bottom-20 hidden md:block"
+                        size={400}
+                        dotRadius={3}
+                        dotColor="white"
+                    />
+                </div>
+                <div className="w-full flex items-center justify-center mt-25 col-span-1 lg:col-span-2">
+                    <div className="flex flex-col items-center justify-center text-center gap-8">
+                        <p className="text-[2rem] text-background">
+                            The next project can be your. Let`s talk and find
+                            out how we can help you grow!
+                        </p>
+                        <AnimatedButton className=" text-white px-8 py-4 text-[1.5rem]">
+                            Contact sales
+                        </AnimatedButton>
+                    </div>
                 </div>
             </div>
         </section>

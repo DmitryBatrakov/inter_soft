@@ -37,13 +37,13 @@ export const Header = () => {
     };
 
     const closeServices = () => {
-        closeTimer.current = setTimeout(() => setServicesOpen(false), 500);
+        closeTimer.current = setTimeout(() => setServicesOpen(false), 200);
     };
 
     return (
         <header
             className={cn(
-                "flex justify-center items-center py-5 px-4 w-full fixed top-0 left-0 right-0 z-20 bg-background transition-all duration-400 ease-in-out delay-100",
+                "flex justify-center items-center py-5 px-4 w-full fixed top-0 left-0 right-0 z-30 bg-background transition-all duration-400 ease-in-out delay-100",
                 direction === "down" ? " -translate-y-full" : "translate-y-0",
             )}
         >
@@ -63,29 +63,39 @@ export const Header = () => {
                         <Link href="/contact">Contacts</Link>
                     </li>
 
-                    <li
-                        className="relative"
-                        onMouseEnter={openServices}
-                        onFocus={openServices}
-                        onClick={() => setServicesOpen(false)}
-                    >
+                    <li className="relative">
                         <button
                             type="button"
-                            className="flex gap-2 items-center justify-center w-full"
+                            className="flex gap-2 items-center justify-center w-full cursor-pointer"
                             aria-expanded={servicesOpen}
-                            onClick={() => router.push("/services")}
+                            onClick={() => setServicesOpen(false)}
+                            onMouseEnter={openServices}
+                            onFocus={openServices}
                         >
-                            <span className={cn(" transition-color duration-300", servicesOpen ? "text-primary" : "")}>
+                            <span
+                                className={cn(
+                                    " transition-color duration-300",
+                                    servicesOpen ? "text-primary" : "",
+                                )}
+                                onClick={() => router.push("/services")}
+                            >
                                 Services
                             </span>
-                            <span className={cn(" transition-transform duration-300", servicesOpen ? "text-primary rotate-180" : "")}>
+                            <span
+                                className={cn(
+                                    " transition-transform duration-300",
+                                    servicesOpen
+                                        ? "text-primary rotate-180"
+                                        : "",
+                                )}
+                            >
                                 <ChevronDown className="w-3 h-3" />
                             </span>
                         </button>
                     </li>
 
                     <li className="hover:text-primary transition-all duration-300 ease-in-out">
-                        <Link href="/">Blog</Link>
+                        <Link href="/about">About</Link>
                     </li>
                 </ul>
                 <div className="flex items-center justify-between gap-2">
@@ -104,7 +114,7 @@ export const Header = () => {
                             : "opacity-0 -translate-y-2 pointer-events-none",
                     ].join(" ")}
                 >
-                    <div className="rounded-2xl w-full h-full border bg-background p-4 shadow-xl mt-3">
+                    <div className="rounded-2xl w-full h-full  bg-background p-1 shadow-xl mt-3">
                         <ServicesAccordionHome
                             setServicesOpen={setServicesOpen}
                         />

@@ -1,17 +1,20 @@
-import { businessCardData } from "../data/websites/business-card-site";
-import { landingPageData } from "../data/websites/landing-page";
-import { onlineStoreData } from "../data/websites/online-store";
-import { corporateWebsiteData } from "../data/websites/corporate-website";
-import { ServicePageData } from "../model/types";
+import { landingPageData } from "../data/web-solutions/landing-page";
+import { corporateWebsiteData } from "../data/web-solutions/corporate-website";
+import { WebSolutionsPageData } from "../model/web-solutions/types";
+import { webPortalsData } from "../data/web-solutions/web-portals";
+import { saasPlatformsData } from "../data/software-products/saas-platforms";
+import { SaaPlatformData } from "../model/saas-platform/type";
 
 
-const serviceDataMap: Record<string, ServicePageData> = {
-    "business-card": businessCardData,
+const webSolutionsDataMap: Record<string, WebSolutionsPageData> = {
     "landing-page": landingPageData,
-    "online-store": onlineStoreData,
     "corporate-website": corporateWebsiteData,
+    "web-portals": webPortalsData,
 }
+export const getWebSolutionsPageData = (slug: string) => webSolutionsDataMap[slug] ?? null;
 
-export const getServicePageData = (slug: string): ServicePageData | null => {
-    return serviceDataMap[slug] ?? null;
-}
+
+const softwareProductsDataMap: Record<string, SaaPlatformData> = {
+    "saas-platforms": saasPlatformsData,
+};
+export const getSoftwareProductsPageData = (slug: string) => softwareProductsDataMap[slug] ?? null;

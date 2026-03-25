@@ -16,7 +16,7 @@ export function ServicesAccordionHome({
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
     return (
-        <div className="flex flex-col lg:flex-row w-full h-[600px] gap-2 ">
+        <div className="flex flex-col lg:flex-row w-full h-[620px] gap-2">
             {items.map((item, i) => {
                 const active = i === activeIndex;
 
@@ -27,7 +27,7 @@ export function ServicesAccordionHome({
                         onFocus={() => setActiveIndex(i)}
                         className={cn(
                             "relative rounded-2xl bg-neutral-200 transition-all duration-500 ease-out overflow-hidden",
-                            active ? "flex-6" : "flex-1",
+                            active ? "flex-7" : "flex-1",
                         )}
                     >
                         <div
@@ -40,7 +40,7 @@ export function ServicesAccordionHome({
                         >
                             <h3
                                 className={cn(
-                                    " text-[2rem] lg:text-[4.5rem] text-left origin-left will-change-transform uppercase whitespace-nowrap transition-transform duration-800  ease-out",
+                                    " text-[2rem] lg:text-[4rem] text-left origin-left will-change-transform uppercase whitespace-nowrap transition-transform duration-800  ease-out",
                                     active
                                         ? "opacity-90  scale-100"
                                         : "opacity-0  scale-70",
@@ -126,7 +126,7 @@ export function ServicesAccordionHome({
                         >
                             <span
                                 className={cn(
-                                    "lg:[writing-mode:vertical-rl] uppercase whitespace-nowrap text-[2rem] text-black lg:text-4xl transition-all duration-200 ease-out",
+                                    "lg:[writing-mode:vertical-rl] uppercase whitespace-nowrap text-[1.8rem] text-black lg:text-4xl transition-all duration-200 ease-out",
                                     active
                                         ? "opacity-0 translate-y-2 scale-90"
                                         : "opacity-90 translate-y-0 scale-100",
