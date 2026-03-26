@@ -1,12 +1,15 @@
 import { Separator } from "@/components/ui/separator";
 import { technologiesData } from "@/entities/common/data/common";
+import { CtaData } from "@/entities/service/model/saas-platform/type";
+import { CTABanner } from "@/widgets/banners/cta-banner";
 import Image from "next/image";
 
-export const TechnologiesServices = ({
-    numberSection,
-}: {
+type TechnologiesServicesProps ={
     numberSection: string;
-}) => {
+    data: CtaData;
+}
+
+export const TechnologiesServices = ({data, numberSection}: TechnologiesServicesProps) => {
     const technologiesItems = technologiesData.items;
 
     return (
@@ -47,6 +50,7 @@ export const TechnologiesServices = ({
                         ))}
                     </div>
                 </div>
+                <CTABanner data={data} />
             </div>
         </section>
     );

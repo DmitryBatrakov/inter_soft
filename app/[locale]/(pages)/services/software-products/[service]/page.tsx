@@ -22,9 +22,9 @@ export default async function SoftwareProductsPage({
             <HeroSoftware data={data.hero} />
             <OverviewSoftware data={data.overview} numberSection={"01"} />
             <ProjectWorkServices numberSection={"02"} />
-            <TechnologiesServices numberSection={"03"} />
-            <CTASoftware data={data.cta} numberSection={"04"} />
-            <FaqServices data={data.faq.items} numberSection={"05"} />
+            <TechnologiesServices numberSection={"03"} data={data.cta}/>
+            <FaqServices data={data.faq.items} numberSection={"04"} />
+            <CTASoftware  data={data.cta} />
 
         </div>
     );

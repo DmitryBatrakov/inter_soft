@@ -16,7 +16,7 @@ import { FaPlus } from "react-icons/fa";
 
 export const WorkPrinciples = ({ numberSection }: WorkPrinciplesProps) => {
     return (
-        <section className="w-full min-h-screen mx-auto flex flex-col items-center justify-center px-4 py-6 bg-background relative z-10">
+        <section className="w-full mx-auto flex flex-col items-center justify-center px-4 py-6 bg-background relative z-10">
             <Separator />
             <div className="w-full flex items-center justify-between max-w-7xl mt-4">
                 <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem]">
