@@ -1,33 +1,42 @@
-import { GrReactjs } from "react-icons/gr";
-import { SiNextdotjs } from "react-icons/si";
 import { TechnologiesData } from "../model/type";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
-import { RiNodejsLine } from "react-icons/ri";
 
 export const technologiesData: TechnologiesData = {
-    label: "technologies",
-    description: "We use the latest and greatest technologies to build your project",
+    label: "technologies we use",
+    description:
+        "We rely on a core set of technologies to build scalable, high-performance products — always aligned with the needs of the system.",
+    cta: "Start a Project",
     items: [
         {
             title: "React",
-            icon: GrReactjs,
+            icon: "/assets/icons/technologies/react.svg",
         },
         {
             title: "Next.js",
-            icon: SiNextdotjs,
-        },
-        {
-            title: "Tailwind CSS",
-            icon: RiTailwindCssFill,
+            icon: "/assets/icons/technologies/next.svg",
         },
         {
             title: "TypeScript",
-            icon: SiTypescript,
+            icon: "/assets/icons/technologies/typescript.svg",
+        },
+        {
+            title: "Tailwind CSS",
+            icon: "/assets/icons/technologies/tailwind.svg",
         },
         {
             title: "Node.js",
-            icon: RiNodejsLine,
-        }
+            icon: "/assets/icons/technologies/nodejs.svg",
+        },
+        {
+            title: "Rails",
+            icon: "/assets/icons/technologies/rails.svg",
+        },
+        {
+            title: "AWS",
+            icon: "/assets/icons/technologies/aws.svg",
+        },
+        {
+            title: "GCP",
+            icon: "/assets/icons/technologies/gcp.svg",
+        },
     ],
-}
+};
