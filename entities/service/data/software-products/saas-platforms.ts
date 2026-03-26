@@ -104,9 +104,9 @@ export const saasPlatformsData: SaaPlatformData = {
         ],
     },
     cta: {
-        title: "Contact sales",
-        subtitle: "We're here to help you build your SaaS platform",
-        cta_question: "Sounds interesting? Let's discuss your project",
+        label: "Contact sales",
+        title: "Ready to build your SaaS platform?",
+        cta_question: "Let’s discuss your idea, define the product structure, and plan the development process.",
         cta: "Contact sales",
     },
 };
