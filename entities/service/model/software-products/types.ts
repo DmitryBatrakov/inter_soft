@@ -35,18 +35,19 @@ export type ProcessData = {
 export type FaqItems = {
     question: string;
     answer: string;
-}
+};
+
 export type FaqData = {
     title: string;
     items: FaqItems[];
-}
+};
 
 export type CtaData = {
     label: string;
     title: string;
     cta_question: string;
     cta: string;
-}
+};
 
 export interface SaaPlatformData {
     hero: HeroData;

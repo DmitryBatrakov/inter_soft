@@ -1,7 +1,7 @@
 import { WebSolutionsPageData } from "../../model/web-solutions/types";
 
 export const webPortalsData: WebSolutionsPageData = {
-    slug: "portals",
+    slug: "web-portals",
 
     hero: {
         titlePrefix: "Creating",

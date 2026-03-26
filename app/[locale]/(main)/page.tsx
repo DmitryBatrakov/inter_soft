@@ -1,16 +1,16 @@
-import { DigitalServices } from "@/widgets/services/ui/DigitalServices";
-import { Hero } from "@/widgets/hero/Hero";
+import { Hero } from "@/widgets/main/Hero";
 import { WorkPrinciples } from "@/widgets/work-principles/WorkPrinciples";
 import { Footer } from "@/widgets/footer/Footer";
-import { Industries } from "@/widgets/industries/Industries";
+import { Industries } from "@/widgets/main/Industries";
+import { Services } from "@/widgets/main/Services";
 
 export default function Home() {
     return (
         <div className="relative w-full font-sans shadow-xl">
             <Hero />
 
-            <WorkPrinciples numberSection={"01"} />
-            <DigitalServices numberSection={"02"} />
+            <Services numberSection={"01"} />
+            <WorkPrinciples numberSection={"02"} />
             <Industries numberSection={"03"}/>
 
             <Footer />
