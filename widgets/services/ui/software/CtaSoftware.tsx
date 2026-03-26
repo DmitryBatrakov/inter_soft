@@ -1,4 +1,4 @@
-import { CtaData } from "@/entities/service/model/saas-platform/type";
+import { CtaData } from "@/entities/service/model/software-products/types";
 import { CTABanner } from "@/widgets/banners/cta-banner";
 
 type CTASoftwareProps = {

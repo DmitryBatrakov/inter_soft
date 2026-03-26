@@ -1,5 +1,6 @@
 import { TechnologiesData } from "../model/type";
 
+
 export const technologiesData: TechnologiesData = {
     label: "technologies we use",
     description:

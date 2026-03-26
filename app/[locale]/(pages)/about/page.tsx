@@ -1,4 +1,4 @@
-import { TechnologiesServices } from "@/widgets/services/ui/TechnologiesServices";
+import { TechnologiesServices } from "@/widgets/technologies/TechnologiesServices";
 
 export default function AboutPage() {
     return (

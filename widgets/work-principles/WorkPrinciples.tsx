@@ -8,8 +8,9 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { cardData } from "@/entities/work-principles/model/data";
-import { WorkPrinciplesProps } from "@/entities/work-principles/model/type";
+import { cardData } from "@/entities/shared/data/work-principles";
+import { WorkPrinciplesProps } from "@/entities/shared/model/type";
+
 import { SpinningFigure } from "@/shared/spinning-fidure/spinning-figure";
 import { Ticker } from "@/shared/ticker/Ticker";
 import { FaPlus } from "react-icons/fa";

@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { OverviewSaas } from "@/entities/service/model/saas-platform/type";
+import { OverviewSaas } from "@/entities/service/model/software-products/types";
 
 type OverviewSoftwareProps = {
     data: OverviewSaas;

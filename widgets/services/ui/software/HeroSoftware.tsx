@@ -1,4 +1,4 @@
-import { HeroData } from "@/entities/service/model/saas-platform/type";
+import { HeroData } from "@/entities/service/model/software-products/types";
 import { SpinningFigure } from "@/shared/spinning-fidure/spinning-figure";
 import { AnimatedButton } from "@/shared/amimated-button/animated-button";
 

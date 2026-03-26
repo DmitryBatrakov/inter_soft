@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { technologiesData } from "@/entities/common/data/common";
+import { technologiesData } from "@/entities/shared/data/technologies";
 import Image from "next/image";
 
 export const TechnologiesServices = ({

@@ -1,4 +1,5 @@
-import { IndustriesData } from "../model/types";
+import { IndustriesData } from "../model/type";
+
 
 export const industriesData: IndustriesData = {
     title: "Industries we work with",

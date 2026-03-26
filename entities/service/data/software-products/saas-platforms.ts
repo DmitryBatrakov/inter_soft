@@ -1,4 +1,4 @@
-import { SaaPlatformData } from "../../model/saas-platform/type";
+import { SaaPlatformData } from "../../model/software-products/types";
 
 export const saasPlatformsData: SaaPlatformData = {
     hero: {
