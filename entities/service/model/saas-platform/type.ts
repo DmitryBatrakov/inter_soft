@@ -42,8 +42,8 @@ export type FaqData = {
 }
 
 export type CtaData = {
+    label: string;
     title: string;
-    subtitle:string;
     cta_question: string;
     cta: string;
 }
