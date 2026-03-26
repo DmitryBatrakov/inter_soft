@@ -1,7 +1,6 @@
 "use client";
 
 import { Separator } from "@/components/ui/separator";
-import { industriesData } from "@/entities/industries/data/data";
 import { cn } from "@/lib/utils";
 import DotPattern from "@/shared/icons/DotPattern";
 import { MoveRight } from "lucide-react";
@@ -9,6 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { PiArrowCircleRight } from "react-icons/pi";
 import { AnimatedButton } from "@/shared/amimated-button/animated-button";
+import { industriesData } from "@/entities/shared/data/industries";
 
 export const Industries = ({ numberSection }: { numberSection: string }) => {
     const [openIndexes, setOpenIndexes] = useState<number[]>([]);
