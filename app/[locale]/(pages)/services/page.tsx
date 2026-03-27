@@ -10,7 +10,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 export default function ServicesPage() {
     return (
-        <div className="w-full min-h-screen mx-auto flex items-center justify-center relative overflow-x-clip z-10 bg-background">
+        <div className="w-full mx-auto flex items-center justify-center relative overflow-x-clip z-10 bg-background">
             <div className="w-full max-w-7xl relative z-10 p-4 mt-10">
                 <h1 className="text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-bold mt-20 mb-10 lg:mt-30 md:mb-20">
                     Digital Marketing Services

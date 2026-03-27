@@ -132,7 +132,7 @@ export const Header = () => {
                             <HiOutlineMenu className="w-6 h-6" />
                         </DrawerTrigger>
                         <DrawerContent
-                            className="min-h-screen drawer-slow"
+                            className="min-h-[50vh]] drawer-slow"
                             id="mobile-menu-drawer"
                         >
                             <DrawerHeader>

@@ -2,7 +2,7 @@ import { TechnologiesServices } from "@/widgets/technologies/TechnologiesService
 
 export default function AboutPage() {
     return (
-        <div className="w-full min-h-screen mx-auto flex flex-col items-center justify-center relative overflow-x-clip">
+        <div className="w-full mx-auto flex flex-col items-center justify-center relative overflow-x-clip">
             <TechnologiesServices numberSection={"01"} />
         </div>
     );
