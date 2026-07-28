@@ -1,17 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-    variable: "--font-inter",
-    subsets: ["latin"],
-});
-
-const russoOne = localFont({
-    src: "../lib/fonts/RussoOne-Regular.ttf",
-    variable: "--font-russo-one",
-});
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -23,13 +11,5 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en" suppressHydrationWarning>
-            <body
-                className={`${inter.variable} ${russoOne.variable} antialiased relative`}
-            >
-                {children}
-            </body>
-        </html>
-    );
+    return children;
 }

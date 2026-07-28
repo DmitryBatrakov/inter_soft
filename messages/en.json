@@ -2,7 +2,133 @@
     "Header": {
         "services": "Services",
         "contacts": "Contacts",
+        "about": "About",
         "blog": "Blog",
-        "link": "Start a project"
+        "link": "Start a project",
+        "menu": "Menu",
+        "navigation": "Navigation",
+        "close": "Close"
+    },
+    "Footer": {
+        "ctaTitle": "READY TO TURN YOUR IDEA INTO A PRODUCT?",
+        "ctaButton": "Let's begin",
+        "contactUs": "Contact Us",
+        "followUs": "Follow Us"
+    },
+    "Hero": {
+        "sectionLabel": "Software company you can trust",
+        "heading": {
+            "lineOne": "At Inter Soft we build",
+            "highlightedPrefix": "software",
+            "highlightedAccent": "products",
+            "lineTwo": "that solve",
+            "lineThreePrefix": "real",
+            "lineThreeSuffix": "challenges"
+        },
+        "bannerTitle": "Not sure where to start?",
+        "ctaLabel": "Explore our services"
+    },
+    "Common": {
+        "contactSales": "Contact Sales",
+        "learnMore": "Learn More",
+        "expand": "Expand"
+    },
+    "Services": {
+        "sectionLabel": "What we can offer",
+        "ticker": "Our Product",
+        "items": {
+            "custom-software": {
+                "title": "Custom Software Development",
+                "description": "Tailored software solutions designed from scratch to meet your specific business needs. Whether it's a complex enterprise system or a user-facing product, we build software aligned with your goals."
+            },
+            "turnkey-solutions": {
+                "title": "Turnkey Software Solutions",
+                "description": "End-to-end product development covering every stage — from concept to launch and beyond. We handle the full process, so you can stay focused on your business."
+            },
+            "low-code": {
+                "title": "Low-code solutions",
+                "description": "Leverage low-code platforms to accelerate development and reduce costs. Ideal for building scalable applications faster, with flexibility and easier maintenance."
+            },
+            "design": {
+                "title": "Design UX / UI",
+                "description": "Designing intuitive, visually refined interfaces that enhance user experience and make your product easy and enjoyable to use."
+            }
+        },
+        "cta": {
+            "title": "Ready to build your next project?",
+            "question": "Let's talk about your project"
+        }
+    },
+    "WorkPrinciples": {
+        "sectionLabel": "work principles",
+        "ticker": "About us",
+        "intro1": "We are a software company building scalable digital products and systems.",
+        "intro2": "From web platforms to complex integrations, we create solutions that solve real-world challenges.",
+        "intro3": "Our team combines strong engineering expertise with a product-driven approach to deliver reliable and efficient results.",
+        "cards": {
+            "experience": {
+                "subtitle": "Years of experience",
+                "description": "Building digital products and software solutions"
+            },
+            "clients": {
+                "subtitle": "Clients",
+                "description": "Trusted by companies across different industries"
+            },
+            "projects": {
+                "subtitle": "Projects delivered",
+                "description": "From simple websites to complex platforms"
+            },
+            "retention": {
+                "subtitle": "Client retention",
+                "description": "Long-term partnerships and repeat collaborations"
+            },
+            "team": {
+                "subtitle": "Team members",
+                "description": "In-house and distributed experts"
+            },
+            "countries": {
+                "subtitle": "Countries",
+                "description": "Serving clients worldwide"
+            }
+        }
+    },
+    "Industries": {
+        "sectionLabel": "Industries we work with",
+        "ctaText": "The next project can be yours. Let's talk and find out how we can help you grow!",
+        "items": {
+            "logistics": {
+                "title": "Logistics",
+                "description": "We have worked with a wide range of industries, from small businesses to large enterprises. We have a deep understanding of the needs of each industry and we are able to provide the best solution for each project."
+            },
+            "booking": {
+                "title": "Booking",
+                "description": "Booking management systems, internal systems, appointments software, even management software and others."
+            },
+            "fintech": {
+                "title": "Fintech",
+                "description": "Crypto solutions, payment gateways, investments app, SaaS etc. Bring your fintech idea into life!"
+            },
+            "retail": {
+                "title": "Retail",
+                "description": "Grow your retail business with custom checkout solutions, loyalty apps, CRMs, warehouse management software or any other app to help your retail company grow!"
+            },
+            "ecommerce": {
+                "title": "eCommerce",
+                "description": "Increase your sales with a stunning eCommerce solution. It can be an online store or mobile app, dropshipping solutions, store management software or anything else you have in mind."
+            }
+        }
+    },
+    "Faq": {
+        "subtitle": "We feel that you still have questions"
+    },
+    "ServicesPage": {
+        "heading": "Digital Marketing Services"
+    },
+    "ContactPage": {
+        "title": "Contact Page"
+    },
+    "DigitalServices": {
+        "sectionLabel": "inter soft services",
+        "ticker": "Our services"
     }
 }
