@@ -12,7 +12,7 @@ export const AppBreadcrumb = () => {
     const breadcrumbs = useBreadcrumbs();
 
     return (
-        <Breadcrumb className="absolute top-25 left-0 z-20">
+        <Breadcrumb className="absolute top-25 left-0 z-20 px-4">
             <BreadcrumbList>
                 {breadcrumbs.map((crumb, i) => (
                     <React.Fragment key={crumb.href}>

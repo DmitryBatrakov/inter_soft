@@ -8,12 +8,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { PiArrowCircleRight } from "react-icons/pi";
 import { AnimatedButton } from "@/shared/amimated-button/animated-button";
-import { industriesData } from "@/entities/shared/data/industries";
+import { industryItems } from "@/entities/shared/data/industries";
+import { useTranslations } from "next-intl";
 
 export const Industries = ({ numberSection }: { numberSection: string }) => {
+    const t = useTranslations("Industries");
+    const tc = useTranslations("Common");
     const [openIndexes, setOpenIndexes] = useState<number[]>([]);
-
-    const industriesItems = industriesData.items;
 
     const handleItemClick = (index: number) => {
         setOpenIndexes((prev) =>
@@ -28,7 +29,7 @@ export const Industries = ({ numberSection }: { numberSection: string }) => {
             <Separator className="w-full bg-muted-foreground" />
             <div className="w-full flex items-center justify-between max-w-7xl mt-4">
                 <span className="uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem] text-background">
-                    Industries we work with
+                    {t("sectionLabel")}
                 </span>
                 <span className="px-3 py-1 bg-accent-foreground rounded-md text-background">
                     {numberSection}
@@ -36,12 +37,12 @@ export const Industries = ({ numberSection }: { numberSection: string }) => {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-5 md:gap-30 lg:gap-0 w-full max-w-7xl py-10 md:py-20 relative z-10">
                 <div className="flex flex-col gap-5 justify-center items-center lg:items-start flex-1">
-                    {industriesItems.map((item, index) => {
+                    {industryItems.map((item, index) => {
                         const isOpen = openIndexes.includes(index);
 
                         return (
                             <div
-                                key={item.title}
+                                key={item.key}
                                 className=" flex items-center justify-end"
                                 onClick={() => handleItemClick(index)}
                             >
@@ -53,7 +54,7 @@ export const Industries = ({ numberSection }: { numberSection: string }) => {
                                 >
                                     <div className="flex items-center justify-between w-full cursor-pointer">
                                         <span className="text-[1.4rem] md:text-[1.5rem] font-inter font-extrabold md:font-bold tracking-wider">
-                                            {item.title}
+                                            {t(`items.${item.key}.title`)}
                                         </span>
                                         <span
                                             className={cn(
@@ -76,21 +77,18 @@ export const Industries = ({ numberSection }: { numberSection: string }) => {
                                     >
                                         <div className="overflow-hidden flex flex-col gap-4">
                                             <p className="text-[1rem] font-inter font-light">
-                                                {item.description}
+                                                {t(`items.${item.key}.description`)}
                                             </p>
                                             <div className="flex flex-col">
-                                                {item.link.map((link) => (
-                                                    <Link
-                                                        key={link.label}
-                                                        href={link.href}
-                                                        className="text-[1.1rem] flex w-full items-center justify-start gap-3 group"
-                                                    >
-                                                        <span className="font-inter font-bold text-primary text-[1rem]">
-                                                            {link.label}
-                                                        </span>
-                                                        <MoveRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-all duration-300 ease-in-out" />
-                                                    </Link>
-                                                ))}
+                                                <Link
+                                                    href={item.href}
+                                                    className="text-[1.1rem] flex w-full items-center justify-start gap-3 group"
+                                                >
+                                                    <span className="font-inter font-bold text-primary text-[1rem]">
+                                                        {tc("learnMore")}
+                                                    </span>
+                                                    <MoveRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-all duration-300 ease-in-out" />
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -123,11 +121,10 @@ export const Industries = ({ numberSection }: { numberSection: string }) => {
                 <div className="w-full flex items-center justify-center mt-25 col-span-1 lg:col-span-2">
                     <div className="flex flex-col items-center justify-center text-center gap-8">
                         <p className="text-[2rem] text-background">
-                            The next project can be your. Let`s talk and find
-                            out how we can help you grow!
+                            {t("ctaText")}
                         </p>
-                        <AnimatedButton className=" text-white px-8 py-4 text-[1.5rem]">
-                            Contact sales
+                        <AnimatedButton className=" text-white px-8 py-4 text-[1rem] md:text-[1.5rem]">
+                            {tc("contactSales")}
                         </AnimatedButton>
                     </div>
                 </div>

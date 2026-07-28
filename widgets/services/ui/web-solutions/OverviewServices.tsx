@@ -1,12 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { OverviewService } from "@/entities/service/model/web-solutions/types";
 import { IoArrowDownSharp } from "react-icons/io5";
+import { useTranslations } from "next-intl";
 
 type OverviewServicesProps = {
     data: OverviewService;
 };
 
 export const OverviewServices = ({ data }: OverviewServicesProps) => {
+    const t = useTranslations("Common");
     return (
         <section className="w-full flex flex-col items-center justify-start bg-foreground relative z-10 px-4 py-5 md:py-15">
             <div className="max-w-7xl w-full flex flex-col items-center justify-center">
@@ -29,7 +31,7 @@ export const OverviewServices = ({ data }: OverviewServicesProps) => {
                                     variant="customNeutral"
                                     className="flex items-center justify-center  md:max-w-[17vw] lg:max-w-[13vw] w-full gap-2 py-6"
                                 >
-                                    <span>Expand</span>
+                                    <span>{t("expand")}</span>
                                     <IoArrowDownSharp className="w-5 h-5" />
                                 </Button>
                             </div>

@@ -43,10 +43,10 @@ export type FaqData = {
 };
 
 export type CtaData = {
-    label: string;
-    title: string;
-    cta_question: string;
-    cta: string;
+    label?: string;
+    title?: string;
+    cta_question?: string;
+    cta?: string;
 };
 
 export interface SaaPlatformData {

@@ -11,7 +11,7 @@ export const OverviewSoftware = ({
     numberSection,
 }: OverviewSoftwareProps) => {
     return (
-        <section className="w-full mx-auto flex flex-col items-center justify-start px-4 py-6 relative z-10 bg-background min-h-[40vh]">
+        <section className="w-full mx-auto flex flex-col items-center justify-start px-4 py-6 relative z-10 bg-background">
             <Separator />
             <div className="max-w-7xl w-full flex flex-col items-center justify-center">
                 <div className="w-full flex items-center justify-between  mt-4 ">

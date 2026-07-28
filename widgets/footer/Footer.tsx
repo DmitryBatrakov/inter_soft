@@ -7,8 +7,10 @@ import { MdEmail } from "react-icons/md";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
+import { useTranslations } from "next-intl";
 
 export const Footer = () => {
+    const t = useTranslations("Footer");
     return (
         <footer className="w-full flex flex-col items-center justify-center mx-auto px-4 py-6 overflow-x-clip relative lg:sticky lg:bottom-0 z-0 bg-background">
             <div className="max-w-7xl w-full py-10 lg:py-0 lg:pt-20 lg:pb-10 relative grid grid-cols-1 items-start justify-center gap-10">
@@ -20,10 +22,10 @@ export const Footer = () => {
                     </div>
                     <div className="flex flex-col items-center justify-center">
                         <div className="flex flex-col items-start h-full justify-center gap-5 p-5 bg-secondary rounded-md max-w-sm">
-                            <p className="text-5xl uppercase">
-                                READY TO TURN YOUR IDEA INTO A PRODUCT?
+                            <p className="text-3xl md:text-5xl uppercase">
+                                {t("ctaTitle")}
                             </p>
-                            <AnimatedButton>Let`s begin</AnimatedButton>
+                            <AnimatedButton>{t("ctaButton")}</AnimatedButton>
                         </div>
                     </div>
                 </div>
@@ -31,7 +33,7 @@ export const Footer = () => {
                     <div className="flex flex-col gap-5 w-96">
                         <div>
                             <p className="font-inter text-xl font-semibold">
-                                Contact Us
+                                {t("contactUs")}
                             </p>
                             <Separator className="" />
                         </div>
@@ -60,7 +62,7 @@ export const Footer = () => {
                     <div className="flex flex-col gap-5 w-96">
                         <div>
                             <p className="font-inter text-xl font-semibold">
-                                Follow Us
+                                {t("followUs")}
                             </p>
                             <Separator className="" />
                         </div>

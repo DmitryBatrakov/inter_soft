@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { FaqItem as FaqItemType } from "@/entities/service/model/web-solutions/types";
 import FaqList from "@/features/service-faq/ui/FaqItem";
+import { useTranslations } from "next-intl";
 
 export const Faq = ({
     data,
@@ -9,12 +10,13 @@ export const Faq = ({
     data: FaqItemType[];
     numberSection: string;
 }) => {
+    const t = useTranslations("Faq");
     return (
-        <section className="w-full flex flex-col items-center justify-center min-h-screen overflow-x-clip relative bg-background z-10">
+        <section className="w-full flex flex-col items-center justify-center overflow-x-clip relative bg-background z-10">
             <Separator />
             <div className="w-full flex items-center justify-between max-w-7xl my-4 p-4">
                 <span className="font-heading uppercase text-[0.9rem] md:text-[1rem] lg:text-[1.3rem]">
-                    We feel that you still have questions
+                    {t("subtitle")}
                 </span>
                 <span className="text-accent-foreground px-3 py-1 bg-secondary rounded-md">
                     {numberSection}

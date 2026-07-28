@@ -40,7 +40,7 @@ export function ServicesAccordionHome({
                         >
                             <h3
                                 className={cn(
-                                    " text-[2rem] lg:text-[4rem] text-left origin-left will-change-transform uppercase whitespace-nowrap transition-transform duration-800  ease-out",
+                                    " text-[1.5rem] lg:text-[3.5rem] text-left origin-left will-change-transform uppercase whitespace-nowrap transition-transform duration-800  ease-out",
                                     active
                                         ? "opacity-90  scale-100"
                                         : "opacity-0  scale-70",
@@ -126,7 +126,7 @@ export function ServicesAccordionHome({
                         >
                             <span
                                 className={cn(
-                                    "lg:[writing-mode:vertical-rl] uppercase whitespace-nowrap text-[1.8rem] text-black lg:text-4xl transition-all duration-200 ease-out",
+                                    "lg:[writing-mode:vertical-rl] uppercase whitespace-nowrap text-[1.8rem] text-black lg:text-[2.3rem] transition-all duration-200 ease-out",
                                     active
                                         ? "opacity-0 translate-y-2 scale-90"
                                         : "opacity-90 translate-y-0 scale-100",

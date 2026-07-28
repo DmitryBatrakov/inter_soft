@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ThemeToggle } from "../../shared/providers/theme-provider/toggle-theme";
-import { Button } from "@/components/ui/button";
+import { LanguageSwitcher } from "@/shared/language-switcher/language-switcher";
 import { ChevronDown } from "lucide-react";
 import { AnimatedButton } from "@/shared/amimated-button/animated-button";
 import { useTranslations } from "next-intl";
@@ -16,18 +16,22 @@ import {
     DrawerTrigger,
 } from "@/components/ui/drawer";
 import { HiOutlineMenu } from "react-icons/hi";
-import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { cn } from "@/lib/utils";
 import { ServicesAccordionHome } from "@/features/services-accordion/ui/services-accordion-home";
-import { useRef, useState } from "react";
+import { useRef, useState, type CSSProperties } from "react";
 import { useRouter } from "next/navigation";
 
 export const Header = () => {
     const t = useTranslations("Header");
-    const direction = useScrollDirection(10);
     const [servicesOpen, setServicesOpen] = useState(false);
 
     const router = useRouter();
+
+    const navLinks = [
+        { href: "/contact", label: t("contacts") },
+        { href: "/services", label: t("services") },
+        { href: "/about", label: t("about") },
+    ];
 
     const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -41,12 +45,7 @@ export const Header = () => {
     };
 
     return (
-        <header
-            className={cn(
-                "flex justify-center items-center py-5 px-4 w-full fixed top-0 left-0 right-0 z-30 bg-background transition-all duration-400 ease-in-out delay-100",
-                direction === "down" ? " -translate-y-full" : "translate-y-0",
-            )}
-        >
+        <header className="flex justify-center items-center py-5 px-4 w-full fixed top-0 left-0 right-0 z-30 bg-background">
             <nav
                 className="relative mx-auto hidden w-full max-w-7xl items-center justify-between md:flex"
                 onMouseLeave={closeServices}
@@ -60,7 +59,7 @@ export const Header = () => {
 
                 <ul className="flex items-center md:gap-8 lg:gap-10 text-sm">
                     <li className="hover:text-primary transition-all duration-300 ease-in-out">
-                        <Link href="/contact">Contacts</Link>
+                        <Link href="/contact">{t("contacts")}</Link>
                     </li>
 
                     <li className="relative">
@@ -79,7 +78,7 @@ export const Header = () => {
                                 )}
                                 onClick={() => router.push("/services")}
                             >
-                                Services
+                                {t("services")}
                             </span>
                             <span
                                 className={cn(
@@ -89,19 +88,18 @@ export const Header = () => {
                                         : "",
                                 )}
                             >
-                                <ChevronDown className="w-3 h-3" />
+                                <ChevronDown className="w-3 h-3 hidden lg:block" />
                             </span>
                         </button>
                     </li>
 
                     <li className="hover:text-primary transition-all duration-300 ease-in-out">
-                        <Link href="/about">About</Link>
+                        <Link href="/about">{t("about")}</Link>
                     </li>
                 </ul>
                 <div className="flex items-center justify-between gap-2">
-                    <Button className="bg-transparent text-foreground hover:bg-accent">
-                        en <ChevronDown className="w-4 h-4" />
-                    </Button>
+                    <ThemeToggle />
+                    <LanguageSwitcher />
                     <AnimatedButton>{t("link")}</AnimatedButton>
                 </div>
                 <div
@@ -121,30 +119,45 @@ export const Header = () => {
                     </div>
                 </div>
             </nav>
-            <div className="md:hidden flex items-cemter justify-between w-full ">
+            {/*Mobile menu*/}
+            <div className="md:hidden flex items-center justify-between w-full ">
                 <div className="flex items-center justify-center">
                     Inter SOFT
                 </div>
                 <div className="flex items-center justify-center gap-2">
+                    <LanguageSwitcher />
                     <ThemeToggle />
                     <Drawer direction="top" aria-controls="mobile-menu-drawer">
                         <DrawerTrigger>
                             <HiOutlineMenu className="w-6 h-6" />
                         </DrawerTrigger>
                         <DrawerContent
-                            className="min-h-screen drawer-slow"
+                            className="h-screen drawer-slow"
                             id="mobile-menu-drawer"
                         >
-                            <DrawerHeader>
-                                <DrawerTitle>Menu</DrawerTitle>
+                            <DrawerHeader className="items-center">
+                                <DrawerTitle>{t("menu")}</DrawerTitle>
                             </DrawerHeader>
-                            <div className="p-4 flex flex-col gap-4">
-                                <h1>Navigation</h1>
-                                <ServicesAccordionHome />
-                            </div>
-                            <DrawerFooter>
+                            <nav className="flex flex-1 flex-col items-center justify-center gap-8">
+                                {navLinks.map((linkItem, index) => (
+                                    <DrawerClose asChild key={linkItem.href}>
+                                        <Link
+                                            href={linkItem.href}
+                                            style={
+                                                {
+                                                    "--index": index,
+                                                } as CSSProperties
+                                            }
+                                            className="menu-item-cascade text-3xl font-medium hover:text-primary transition-colors duration-300"
+                                        >
+                                            {linkItem.label}
+                                        </Link>
+                                    </DrawerClose>
+                                ))}
+                            </nav>
+                            <DrawerFooter className="items-center">
                                 <DrawerClose asChild>
-                                    <AnimatedButton>Close</AnimatedButton>
+                                    <AnimatedButton>{t("close")}</AnimatedButton>
                                 </DrawerClose>
                             </DrawerFooter>
                         </DrawerContent>
